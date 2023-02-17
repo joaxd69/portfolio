@@ -1,0 +1,82 @@
+.Nav{
+    height:fit-content;
+    padding-top: 12.5px;
+    width:auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Menu{
+    display: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+.TitleContainer{
+    width:fit-content;
+    float: left;
+    display: flex;
+    justify-content:left;
+}
+.Title{
+    color: rgb(100, 175, 164);
+    display: inline;
+    margin: 0;
+    line-height: 19.5px;
+    font-size: 40px;
+    font-style:italic;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.ButtonsContainer{
+    width: 600px;
+    float: right;
+    display: flex;
+    justify-content:space-evenly;
+}
+.Buttons{
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+}
+.Buttons a{
+      color: rgb(153, 153, 153);
+      text-decoration: none;
+      font-size: 20px;
+      
+      
+}
+.Buttons :hover{
+    background: linear-gradient(54deg, rgb(210, 255, 31) 0.00%, rgb(123, 194, 85) 45.00%, rgb(227, 144, 43) 100.00%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+@media(max-width:817px){
+    .Title{
+        line-height: 19.5px;
+        font-size: 29px;
+    }
+}
+@media(max-width:757px){
+    .Menu{
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+        left: 0;
+        top: 0; 
+    }
+    .TitleContainer{
+       display: inline-block;
+       width: 100%;
+    
+    }
+   .ButtonsContainer{
+   position: relative;
+   left: -100%;
+   transition: all .5s
+   }
+
+   .check:checked ~ .ButtonsContainer{
+    left: 0;
+   }
+}
