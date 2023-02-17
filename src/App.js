@@ -27,7 +27,10 @@ function App() {
           </select>  
           </div>
         }       
-     <About language={language} />
+    <div className='Container'>
+      <About language={language} />
+    </div>
+     
     </div>
   );
 }

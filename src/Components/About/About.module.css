@@ -3,4 +3,35 @@
 }
 .InfoContainer{
    color: aliceblue;
+   display: flex;
+   justify-content: space-around;
+   
+}
+.info{
+   display: inline-block;
+   color: rgb(145, 142, 142);
+   font-size: 50px;
+   width: 50%;
+   
+}
+.image{
+  width: 300px;
+  border-radius:50px ;
+}
+
+@media(max-width:757px){
+   .info{
+      font-size: 40px;
+   }
+   .image{
+      width:250px ;
+   }
+}
+@media(max-width:500px){
+   .info{
+      font-size: 30px ;
+   }
+   .image{
+      width: 180px;
+   }
 }
