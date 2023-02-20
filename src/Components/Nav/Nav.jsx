@@ -1,7 +1,7 @@
 import style from "./Nav.module.css"
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import { Link } from "react-router-dom";
 
 export default function Nav ({languaje}){
     return (
@@ -24,20 +24,32 @@ export default function Nav ({languaje}){
                
               <div className={style.ButtonsContainer}>
                  <button className={style.Buttons}>
-                    <a href="">Sobre mi</a>
+                    <Link to = '/About'>
+                    <span>Sobre mi</span>
+                    </Link>
+                    
                 </button>
                 <button className={style.Buttons}>
-                    <a href="">Proyectos</a>
+                    <Link to = '/Projects'>
+                    Proyectos
+                    </Link>
+                    
                 </button>
                 <button className={style.Buttons}>
-                    <a href="">Contacto</a>
+                    <Link to='/Contact'>
+                      Contacto
+                    </Link>
                 </button>
                 <button className={style.Buttons}>
-                    <a href="">Servicios</a>
+                    <Link to='/Services'>                    
+                    Servicios
+                    </Link>
                 </button>
                 
                 <button className={style.Buttons}>
-                    <a href="">Proceso</a>
+                    <Link to='/'>
+                    Home
+                    </Link>
                 </button>
               </div>
                
@@ -59,20 +71,30 @@ export default function Nav ({languaje}){
            
           <div className={style.ButtonsContainer}>
              <button className={style.Buttons}>
-                <a href="">About me</a>
+                <Link to='/About'>
+                About me
+                </Link>
             </button>
             <button className={style.Buttons}>
-                <a href="">Project</a>
+                <Link to ='/Projects'>
+                Project
+                </Link>
             </button>
             <button className={style.Buttons}>
-                <a href="">Contact</a>
+                <Link to = '/Contact'>
+                Contact
+                </Link>
             </button>
             <button className={style.Buttons}>
-                <a href="">Services</a>
+                <Link to='/Services'>
+                Services
+                </Link>
             </button>
             
             <button className={style.Buttons}>
-                <a href="">Process</a>
+                <Link to= '/'>
+                Home
+                </Link>
             </button>
           </div>
            

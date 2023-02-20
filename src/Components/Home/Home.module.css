@@ -1,0 +1,38 @@
+.Container{
+    color: rgb(170, 165, 165);
+
+}
+.Section1{
+  display: flex;
+  border: 1px solid;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.Container2{
+background-color: rgb(34, 32, 30);
+width: 370px
+}
+.Title{
+    margin: auto;
+}
+.Container2 span{
+    display: flex;
+    font-size:1em;
+    line-height: 1.3;
+    text-align: left;
+}
+
+@media(max-width:1140px){
+     .Container2{
+        width: 500px;
+        margin-top: 10px;
+     }
+    .ImageContainer{
+      float: left;
+    } 
+}
+@media(max-width:1140px){
+    .Section1{
+        display: grid;
+    }
+}

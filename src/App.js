@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import './App.css';
 import About from './Components/About/About';
+import Contact from './Components/Contact/Contact';
 import Nav from './Components/Nav/Nav';
+import { Route, Routes, } from 'react-router-dom';
+import Language from './Components/Language/Language';
+import Home from './Components/Home/Home';
 function App() {
 
   const [language,setLanguage]= useState('spanish')
@@ -9,28 +13,14 @@ function App() {
   return (
     <div className="App">
       <Nav languaje={language}/>
-      
-         {language==="spanish"?
-          <div className='Language'>
-         <span>Cambiar idioma</span>
-         <select onChange={handleChange}>
-          <option value={"spanish"}>Español </option>
-          <option value={"english"}>Ingles </option>
-          
-         </select>
-         </div>:
-         <div className='Language'>
-          <span>Change language</span>
-          <select onChange={handleChange}>
-           <option value={"spanish"}>Spanish </option>
-           <option value={"english"}> English </option>
-          </select>  
-          </div>
-        }       
-    <div className='Container'>
-      <About language={language} />
-    </div>
-     
+      <Language language={language} 
+      handleChange={handleChange}/>
+      <Routes>
+        <Route path='/' element={<Home language={language}/>}/>
+        <Route  path='/about' element={<About language={language}/>}/>
+        <Route  path='/Contact' element={<Contact/>}/>
+        
+      </Routes>
     </div>
   );
 }
