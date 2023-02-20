@@ -1,5 +1,8 @@
 .Title{
    color: aliceblue;
+   font-style: italic;
+   font-size: 40px;
+   letter-spacing: 2px;
 }
 .InfoContainer{
    color: aliceblue;
@@ -10,9 +13,9 @@
 .info{
    display: inline-block;
    color: rgb(145, 142, 142);
-   font-size: 50px;
+   font-size: 30px;
    width: 50%;
-   
+   text-align: left;
 }
 .image{
   width: 300px;
@@ -20,8 +23,12 @@
 }
 
 @media(max-width:757px){
+   .InfoContainer{
+      display:list-item;
+   }
    .info{
-      font-size: 40px;
+      font-size: 30px;
+      display: inline;
    }
    .image{
       width:250px ;
@@ -29,7 +36,8 @@
 }
 @media(max-width:500px){
    .info{
-      font-size: 30px ;
+      font-size: 25px ;
+      
    }
    .image{
       width: 180px;

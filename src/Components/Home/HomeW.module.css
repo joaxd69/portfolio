@@ -1,6 +1,5 @@
-
 .Container{
-    color: rgb(170, 165, 165);
+    color: rgb(0, 0, 0);
 }
 .SpanContainer{
     width: 800px;
@@ -14,7 +13,7 @@
   justify-content: space-evenly;
 }
 .Container2{
-background-color: rgb(34, 32, 30);
+background-color: rgb(219, 228, 230);
 width: 370px
 }
 .Title{
@@ -33,7 +32,6 @@ width: 370px
     height: 1px;
 }
 @media(max-width:1140px){
-
      .Container2{
         width: auto;
         margin-top: 10px;

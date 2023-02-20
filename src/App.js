@@ -6,20 +6,30 @@ import Nav from './Components/Nav/Nav';
 import { Route, Routes, } from 'react-router-dom';
 import Language from './Components/Language/Language';
 import Home from './Components/Home/Home';
+import Darkmode from './Components/Darkmode/Darkmode';
 function App() {
 
   const [language,setLanguage]= useState('spanish')
+  const [darkMode,setDarkMode]= useState(true)
   const handleChange=(e)=>setLanguage(e.target.value)
+  const handleDarkChange=(e)=>{
+    e.target.value==='dark'?setDarkMode(true):setDarkMode(false); 
+  }
+  document.body.style.backgroundColor = darkMode?'rgb(27, 25, 34)':'white';
   return (
     <div className="App">
-      <Nav languaje={language}/>
+      <Nav languaje={language} darkmode={darkMode}/>
+      <Darkmode language={language}
+      darkmode={darkMode}
+      handleDarkChange={handleDarkChange}/>
       <Language language={language} 
-      handleChange={handleChange}/>
+      handleChange={handleChange}
+      darkmode={darkMode} />
+
       <Routes>
-        <Route path='/' element={<Home language={language}/>}/>
-        <Route  path='/about' element={<About language={language}/>}/>
+        <Route path='/' element={<Home language={language} darkmode={darkMode}/>}/>
+        <Route  path='/about' element={<About language={language} darkmode={darkMode}/>}/>
         <Route  path='/Contact' element={<Contact/>}/>
-        
       </Routes>
     </div>
   );

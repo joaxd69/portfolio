@@ -1,9 +1,11 @@
-import style from "./Nav.module.css"
+import darkstyle from "./Nav.module.css"
+import lightstyle from "./NavW.module.css"
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from "react-router-dom";
 
-export default function Nav ({languaje}){
+export default function Nav ({languaje,darkmode}){
+   const style =darkmode?darkstyle:lightstyle
     return (
         <div>
             {languaje==='spanish'?

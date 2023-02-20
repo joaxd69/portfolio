@@ -1,9 +1,11 @@
-export default function Language({language,handleChange}){
+export default function Language({language,handleChange,darkmode}){
+  const color = darkmode?{color:'white'}:{color:'black'}
   return (
+
     <div>
     {language==="spanish"?
           <div className='Language'>
-         <span>Cambiar idioma</span>
+         <span style={color}>Cambiar idioma</span>
          <select onChange={handleChange}>
           <option value={"spanish"}>Español </option>
           <option value={"english"}>Ingles </option>
@@ -11,7 +13,7 @@ export default function Language({language,handleChange}){
          </select>
          </div>:
          <div className='Language'>
-          <span>Change language</span>
+          <span style={color}>Change language</span>
           <select onChange={handleChange}>
            <option value={"spanish"}>Spanish </option>
            <option value={"english"}> English </option>
