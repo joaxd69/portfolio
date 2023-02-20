@@ -24,8 +24,9 @@ width: 370px
 
 @media(max-width:1140px){
      .Container2{
-        width: 500px;
+        width: auto;
         margin-top: 10px;
+
      }
     .ImageContainer{
       float: left;
