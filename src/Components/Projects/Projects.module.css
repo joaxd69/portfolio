@@ -1,6 +1,13 @@
 .SecondContainer{
     background-color: rgb(20, 20, 20);
 }
+.Title{
+    color: rgb(100, 175, 164);
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-decoration:underline;
+}
 .Links{
     color: aliceblue;
     background-color: rgb(39, 37, 35);
@@ -12,12 +19,8 @@
     margin-left:10px ;
     text-decoration: none;
 }
-.Title{
-    color: rgb(100, 175, 164);
-    font-size: 40px;
-    letter-spacing: 2px;
-    font-style: italic;
-    text-decoration:underline;
+.LeftContainer{
+    width: 240%;
 }
 .Projects{
     display: flex;
@@ -72,6 +75,9 @@
     }
 }
 @media(max-width:755px){
+    .LeftContainer{
+        width: auto;
+    }
     .Projects{
         display: inline-block;
     }

@@ -3,7 +3,6 @@ import { faSun ,faMoon} from '@fortawesome/free-solid-svg-icons';
 import styledark from './Darkmode.module.css'
 import stylelight from './Darkmodew.module.css'
 export default function Darkmode ({darkmode,language,handleDarkChange}){
-      const color = darkmode?{color:'white'}:{color:'black'}
       const style = darkmode?styledark:stylelight
    return (
     <div>
