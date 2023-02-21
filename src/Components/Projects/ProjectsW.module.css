@@ -1,0 +1,69 @@
+.SecondContainer{
+    border: 2px solid;
+    border-color: aliceblue;
+}
+.Projects{
+    border: 2px solid;
+    border-color: rgb(213, 248, 116);
+    display: flex;
+}
+.ProjectTitle{
+    border: 2px solid;
+    border-color: rgb(114, 182, 241);
+}
+.ProjectInfo{
+    border: 2px solid;
+    border-color: rgb(161, 46, 127);
+}
+.ProjectInfo span{
+    color: white;
+}
+.ProjectImage{
+    border: 2px solid;
+    border-color: rgb(111, 199, 99);
+    width: 190%;
+    height: 500px;
+}
+.ProjectImage img{
+  width: 100%;
+  height: 100%;
+}
+.ResponsiveImage{
+    display: none;
+}
+
+
+@media(max-width:1200px){
+  .ProjectImage{
+    width: 300%;
+  }
+  
+}
+@media(max-width:970px){
+    .ProjectImage{
+        height:400px;
+    }
+}
+@media(max-width:755px){
+    .Projects{
+        display: inline-block;
+    }
+    .BigImage{
+        display: none;
+    }
+    .ProjectImage{
+        margin: 0 auto;
+        width: 300px;
+        height: auto;
+    }
+    .ResponsiveImage{
+        display: inline-block;
+       
+      }
+}
+@media(max-width:501px){
+    .ProjectImage{
+        width: 280px;
+        height: auto;
+    } 
+}

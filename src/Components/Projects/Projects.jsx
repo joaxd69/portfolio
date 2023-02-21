@@ -34,11 +34,29 @@ export default function Projects({language,darkmode}){
 
             </div>:
 
-            <div className={style.SecondContainer} >
-                <h1 className={style.Title}>My projects</h1>
-                <section className={style.Projects}>
+<div className={style.SecondContainer}>
+<h1 className={style.Title}>My proyects</h1>
 
-                </section>
+<section className={style.Projects}>
+   <div className={style.LeftContainer}>
+        <div className={style.ProjectTitle}>
+        <h1>Videogames</h1>
+    </div>
+    <div className={style.ProjectInfo}>
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Doloribus possimus vero dolorum distinctio laborum similique reiciendis 
+            necessitatibus fugiat alias dolores adipisci accusantium, ad illum.
+            Dolor perspiciatis voluptates voluptatem possimus. Deleniti?
+        </span>
+    </div>
+   </div>
+   
+
+   <div className={style.ProjectImage}>
+     <img src={videogameimg} className={style.BigImage} alt='image' />
+     <img src={videogameresp}  className={style.ResponsiveImage} alt='image' />
+   </div>
+</section>
             </div>
         }
 

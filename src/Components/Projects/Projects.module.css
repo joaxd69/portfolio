@@ -1,23 +1,22 @@
 .SecondContainer{
-    border: 2px solid;
-    border-color: aliceblue;
+    background-color: rgb(20, 20, 20);
+}
+.Title{
+    color: rgb(100, 175, 164);
 }
 .Projects{
-    border: 2px solid;
-    border-color: rgb(213, 248, 116);
     display: flex;
 }
 .ProjectTitle{
-    border: 2px solid;
-    border-color: rgb(114, 182, 241);
+    color: white;
 }
 .ProjectInfo{
-    border: 2px solid;
-    border-color: rgb(161, 46, 127);
+    padding: 10px;
+}
+.ProjectInfo span{
+    color: aliceblue;
 }
 .ProjectImage{
-    border: 2px solid;
-    border-color: rgb(111, 199, 99);
     width: 190%;
     height: 500px;
 
