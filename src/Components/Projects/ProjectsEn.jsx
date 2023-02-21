@@ -37,7 +37,7 @@ export default function ProjectsEn ({darkmode}){
           <img src={videogameresp}  className={style.ResponsiveImage} alt='responsiveimage' />
          </div>
       </div>
-
+        <hr />
       <div className={style.Projects}>
            <div className={style.LeftContainer}>
              <div id='Talkap' className={style.ProjectTitle}>
@@ -61,6 +61,10 @@ export default function ProjectsEn ({darkmode}){
              <img src={talkapresp}  className={style.ResponsiveImage} alt='responsiveimage' />
            </div>
         </div>
+        <div className={style.LastContainer}>
+             <h1>OTHER PROJECTS IN PROCESS....</h1>
+             <span>Actually i'm working in other projects to add in this portfolio.</span>
+         </div>
  </div>
     )
 }

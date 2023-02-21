@@ -33,7 +33,7 @@ export default function ProjectsEs({darkmode}){
              <img src={videogameresp}  className={style.ResponsiveImage} alt='responsiveimage' />
            </div>
         </div>
-
+        <hr />
 
         <div className={style.Projects}>
            <div className={style.LeftContainer}>
@@ -60,6 +60,12 @@ export default function ProjectsEs({darkmode}){
              <img src={videogameresp}  className={style.ResponsiveImage} alt='responsiveimage' />
            </div>
         </div>
+
+         <div className={style.LastContainer}>
+             <h1>OTROS PROYECTOS EN PROCESO....</h1>
+             <span>Actualmente me encuentro realizando otros proyectos para sumar a este portfolio.</span>
+         </div>
+         
     </div>
     )
 }

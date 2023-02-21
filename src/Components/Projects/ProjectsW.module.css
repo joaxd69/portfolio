@@ -24,6 +24,7 @@
 }
 .Projects{
     display: flex;
+    margin-top: 50px;
 }
 .ProjectTitle{
     color: rgb(0, 0, 0);
@@ -50,6 +51,15 @@
 }
 .ResponsiveImage{
     display: none;
+}
+
+.LastContainer h1{
+    color: rgb(0, 0, 0);
+}
+.LastContainer span{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-style: italic;
 }
 @media(max-width:1200px){
   .ProjectImage{
@@ -81,6 +91,7 @@
     }
     .Projects{
         display: inline-block;
+        margin-top: 0px;
     }
     .BigImage{
         display: none;

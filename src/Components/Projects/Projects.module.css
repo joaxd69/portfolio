@@ -1,6 +1,7 @@
 .SecondContainer{
     background-color: rgb(20, 20, 20);
 }
+
 .Title{
     color: rgb(100, 175, 164);
     font-size: 40px;
@@ -24,6 +25,7 @@
 }
 .Projects{
     display: flex;
+    margin-top: 50px;
 }
 .ProjectTitle{
     color: white;
@@ -51,6 +53,17 @@
 .ResponsiveImage{
     display: none;
 }
+.LastContainer{
+   background-color: rgb(27, 25, 34) 
+}
+.LastContainer h1{
+    color: rgb(158, 168, 177);
+}
+.LastContainer span{
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
 @media(max-width:1200px){
   .ProjectImage{
     width: 300%;
@@ -75,11 +88,13 @@
     }
 }
 @media(max-width:755px){
+    
     .LeftContainer{
         width: auto;
     }
     .Projects{
         display: inline-block;
+        margin-top: 0px;
     }
     .BigImage{
         display: none;
