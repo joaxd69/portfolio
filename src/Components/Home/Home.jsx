@@ -48,14 +48,12 @@ export default function Home({language,darkmode}){
             </div>:
 
             <div className={style.Container}>
-
               <h1  >Full stack web developer</h1> 
               <div className={style.SpanContainer}>
-               <span>Hi, mi name is Joaquin,I'm Full stack web developer with experience in
+               <span>Hi, my name is Joaquin,I'm Full stack web developer with experience in
                  build web aplications, working on back end, front end and database
               </span>
               </div>
-             
               <section className={style.Section1} >
                   <div className={style.Container2}>
                 <div className={style.ImageContainer}> 

@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 
 export default function Nav ({languaje,darkmode}){
    const style =darkmode?darkstyle:lightstyle
+   const backgroundColor=darkmode?{backgroundColor:'black'}:
+                                  {backgroundColor:'lightblue'}
+   const fontcolor = darkmode?{color:'white'}:{color:'black'}
     return (
         <div>
             {languaje==='spanish'?
@@ -26,8 +29,8 @@ export default function Nav ({languaje,darkmode}){
                
               <div className={style.ButtonsContainer}>
                  <button className={style.Buttons}>
-                    <Link to = '/About'>
-                    <span>Sobre mi</span>
+                    <Link to = '/'>
+                    <span>Home</span>
                     </Link>
                     
                 </button>
@@ -38,19 +41,19 @@ export default function Nav ({languaje,darkmode}){
                     
                 </button>
                 <button className={style.Buttons}>
-                    <Link to='/Contact'>
-                      Contacto
-                    </Link>
-                </button>
-                <button className={style.Buttons}>
                     <Link to='/Services'>                    
                     Servicios
                     </Link>
                 </button>
                 
                 <button className={style.Buttons}>
-                    <Link to='/'>
-                    Home
+                    <Link to='/About'>
+                     Sobre mi
+                    </Link>
+                </button>
+                <button className={style.Buttons} style={backgroundColor} >
+                    <Link to='/Contact' style={fontcolor}>
+                      Contacto
                     </Link>
                 </button>
               </div>
@@ -72,19 +75,14 @@ export default function Nav ({languaje,darkmode}){
            </div>
            
           <div className={style.ButtonsContainer}>
-             <button className={style.Buttons}>
-                <Link to='/About'>
-                About me
+          <button className={style.Buttons}>
+                <Link to= '/'>
+                Home
                 </Link>
             </button>
             <button className={style.Buttons}>
                 <Link to ='/Projects'>
                 Project
-                </Link>
-            </button>
-            <button className={style.Buttons}>
-                <Link to = '/Contact'>
-                Contact
                 </Link>
             </button>
             <button className={style.Buttons}>
@@ -94,8 +92,13 @@ export default function Nav ({languaje,darkmode}){
             </button>
             
             <button className={style.Buttons}>
-                <Link to= '/'>
-                Home
+                <Link to='/About'>
+                About me
+                </Link>
+            </button>
+            <button className={style.Buttons} id={style.contact} style={backgroundColor}>
+                <Link to = '/Contact' style={fontcolor}>
+                Contact
                 </Link>
             </button>
           </div>

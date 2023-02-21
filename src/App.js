@@ -7,6 +7,7 @@ import { Route, Routes, } from 'react-router-dom';
 import Language from './Components/Language/Language';
 import Home from './Components/Home/Home';
 import Darkmode from './Components/Darkmode/Darkmode';
+import Projects from './Components/Projects/Projects';
 function App() {
 
   const [language,setLanguage]= useState('spanish')
@@ -30,8 +31,10 @@ function App() {
         <Route path='/' element={<Home language={language} darkmode={darkMode}/>}/>
         <Route  path='/about' element={<About language={language} darkmode={darkMode}/>}/>
         <Route  path='/Contact' element={<Contact/>}/>
+        <Route  path='/Projects' element={<Projects language={language} darkmode={darkMode}/>}/>
       </Routes>
     </div>
+    
   );
 }
 

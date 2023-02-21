@@ -34,6 +34,7 @@
     justify-content:space-evenly;
 }
 .Buttons{
+    
     padding: 5px;
     background-color: transparent;
     border: none;
@@ -43,6 +44,7 @@
       text-decoration: none;
       font-size: 20px;
 }
+
 .Buttons :hover{
     color: rgb(100, 175, 164);
     text-decoration:underline rgb(108, 117, 119);
