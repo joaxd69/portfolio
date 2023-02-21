@@ -40,14 +40,17 @@
         height:400px;
     }
 }
-@media(max-width:760px){
+@media(max-width:755px){
+    .Projects{
+        display: inline-block;
+    }
     .BigImage{
         display: none;
     }
     .ProjectImage{
-        width: 1500px;
+        margin: 0 auto;
+        width: 300px;
         height: 500px;
-        padding: 10px
     }
     .ResponsiveImage{
         display: inline-block;
