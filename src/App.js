@@ -8,6 +8,7 @@ import Language from './Components/Language/Language';
 import Home from './Components/Home/Home';
 import Darkmode from './Components/Darkmode/Darkmode';
 import Projects from './Components/Projects/Projects';
+import VideogameInfo from './Components/VideogameInfo/VideogameInfo';
 function App() {
 
   const [language,setLanguage]= useState('spanish')
@@ -32,6 +33,7 @@ function App() {
         <Route  path='/about' element={<About language={language} darkmode={darkMode}/>}/>
         <Route  path='/Contact' element={<Contact/>}/>
         <Route  path='/Projects' element={<Projects language={language} darkmode={darkMode}/>}/>
+        <Route  path='/Projects/Videogames' element={<VideogameInfo language={language} darkmode={darkMode}/>}/>
       </Routes>
     </div>
     

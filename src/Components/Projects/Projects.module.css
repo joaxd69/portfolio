@@ -1,23 +1,43 @@
 .SecondContainer{
     background-color: rgb(20, 20, 20);
 }
+.Links{
+    color: aliceblue;
+    background-color: rgb(39, 37, 35);
+    display: inline-block;
+}
+.Links a{
+    color: rgb(160, 224, 224);
+    display: inline;
+    margin-left:10px ;
+    text-decoration: none;
+}
 .Title{
     color: rgb(100, 175, 164);
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-decoration:underline;
 }
 .Projects{
     display: flex;
 }
 .ProjectTitle{
     color: white;
+    font-size: 30px;
 }
 .ProjectInfo{
+    text-align: left;
     padding: 10px;
 }
 .ProjectInfo span{
     color: aliceblue;
+    font-size: 20px;
+    line-height: 1.8;
+    
 }
 .ProjectImage{
-    width: 190%;
+    width: 240%;
     height: 500px;
 
 }
@@ -37,6 +57,18 @@
 @media(max-width:970px){
     .ProjectImage{
         height:400px;
+    }
+    .ProjectInfo{
+        width: 400px;
+        text-align: center;
+    }
+    
+}
+@media(max-width:860px){
+
+    .ProjectImage{
+        height:300px;
+        padding-top: 30px;
     }
 }
 @media(max-width:755px){

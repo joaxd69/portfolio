@@ -1,28 +1,45 @@
 .SecondContainer{
-    border: 2px solid;
-    border-color: aliceblue;
+    background-color: rgb(187, 214, 214);
+}
+.Links{
+    background-color: rgb(187, 214, 214);
+    color: rgb(0, 0, 0);
+    display: inline-block;
+}
+.Links a{
+
+    display: inline;
+    margin-left:10px ;
+    text-decoration: none;
+}
+.Title{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-decoration:underline;
 }
 .Projects{
-    border: 2px solid;
-    border-color: rgb(213, 248, 116);
     display: flex;
 }
 .ProjectTitle{
-    border: 2px solid;
-    border-color: rgb(114, 182, 241);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
 }
 .ProjectInfo{
-    border: 2px solid;
-    border-color: rgb(161, 46, 127);
+    text-align: left;
+    padding: 10px;
 }
 .ProjectInfo span{
-    color: white;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    line-height: 1.8;
+    
 }
 .ProjectImage{
-    border: 2px solid;
-    border-color: rgb(111, 199, 99);
-    width: 190%;
+    width: 240%;
     height: 500px;
+
 }
 .ProjectImage img{
   width: 100%;
@@ -31,8 +48,6 @@
 .ResponsiveImage{
     display: none;
 }
-
-
 @media(max-width:1200px){
   .ProjectImage{
     width: 300%;
@@ -42,6 +57,18 @@
 @media(max-width:970px){
     .ProjectImage{
         height:400px;
+    }
+    .ProjectInfo{
+        width: 400px;
+        text-align: center;
+    }
+    
+}
+@media(max-width:860px){
+
+    .ProjectImage{
+        height:300px;
+        padding-top: 30px;
     }
 }
 @media(max-width:755px){
