@@ -67,17 +67,17 @@ export default function Contact ({language,darkmode}) {
 
           
             <form  onSubmit={sendEmail} className={style.Form} ref={form}>
-                <label>* Nombre</label>
+                <label>* Nombre</label><span>{visiblyErrors&&errors.name}</span>
                 <input onChange={onChange} value={datos.user_name} type="text" name="user_name" />
-                <span>{visiblyErrors&&errors.name}</span><br />
+              
 
-                <label>* Email</label>
+                <label>* Email</label> <span>{visiblyErrors&&errors.email}</span>
+
                 <input onChange={onChange} value={datos.user_email} type="email" name="user_email" />
-                <span>{visiblyErrors&&errors.email}</span><br />
 
-                <label>* Mensaje</label>
+                <label>* Mensaje</label><span>{visiblyErrors&&errors.message}</span>
                 <textarea onChange={onChange} value={datos.message} name="message" />
-                <span>{visiblyErrors&&errors.message}</span><br />
+                
 
                 <label>Telefono</label>
                 <input type="number" onChange={onChange} value={datos.user_phone} name='user_phone' /><br /> <br />

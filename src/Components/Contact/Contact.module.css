@@ -22,17 +22,19 @@
 .Form input{
     float: left;
     padding: 7px;
-    margin-top:30px;
+    margin-top:20px;
+    margin-bottom:20px;
     width: 110%;
 }
 .Form textarea{
     float: left;
      resize: vertical;
      max-height: 180px;
-     max-width:100%;
+     
      min-height: 50px;
-    margin-top:30px;
-    width: auto;
+     margin-top:20px;
+     margin-bottom:20px;
+    width: 100%;
 }
 .Form button{
      display: inline-block;
@@ -48,28 +50,29 @@
     .FirstContainer{
         display: block;
     }
-    .FormContainer{
-        display: flex;
-        margin: 0 auto;
-        width: fit-content;
-    }
     .Form{
         padding: 40px;
     }
+    .FormContainer{
+        display: flex;
+        margin: 0 auto;
+        width: 500px;
+    }
     .Form input{
-        padding: 5px;
-        margin-top:20px;
+        float: left;
+        padding: 7px;
+        margin-top:25px;
         width: 100%;
     }
     .Form textarea{
         float: left;
          resize: vertical;
          max-height: 180px;
-         max-width:100%;
          min-height: 50px;
-        margin-top:20px;
-        width: auto;
+         margin-top:25px;
+         width: 100%;
     }
+   
     .ChildContainer{
       display: flex;
       width: auto;
