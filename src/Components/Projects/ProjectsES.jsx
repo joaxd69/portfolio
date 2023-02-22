@@ -3,6 +3,7 @@ import lightstyle from './ProjectsW.module.css'
 import videogameimg from '../../assets/Videogame.png'
 import videogameresp from '../../assets/Videogameresp.jpeg'
 import talkapimg from '../../assets/talkap.png'
+import talkapresp from '../../assets/TalkapResponsive.jpeg'
 import {Link} from 'react-router-dom'
 
 export default function ProjectsEs({darkmode}){
@@ -57,7 +58,7 @@ export default function ProjectsEs({darkmode}){
         
            <div className={style.ProjectImage}>
              <img src={talkapimg} className={style.BigImage} alt='computeimage' />
-             <img src={videogameresp}  className={style.ResponsiveImage} alt='responsiveimage' />
+             <img src={talkapresp}  className={style.ResponsiveImage} alt='responsiveimage' />
            </div>
         </div>
 

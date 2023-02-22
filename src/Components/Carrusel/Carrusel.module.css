@@ -1,0 +1,14 @@
+.FirstContainer{
+    width: auto;
+}
+.Image{
+    width: 300px;
+    height: 300px;
+}
+.PrevPhotos{
+    background-color: rgb(35, 35, 43);
+     display: inline-block;
+}
+.PrevPhotos img{
+    margin-left: 10px;
+}

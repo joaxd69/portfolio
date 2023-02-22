@@ -1,0 +1,20 @@
+.PrincipalContainer{
+    border: 2px solid white;
+}
+.SecondContainer{
+    border: 1px solid orange;
+    display: flex;
+
+}
+.DetailsContainer{
+    border: 1px solid green;
+    width: 40%;
+}
+.CarruselContainer{
+    border: 1px solid salmon;
+    width: 60%;
+    background-color: aliceblue;
+}
+.Teconologies{
+    display: inline-block;
+}

@@ -8,7 +8,8 @@ import Language from './Components/Language/Language';
 import Home from './Components/Home/Home';
 import Darkmode from './Components/Darkmode/Darkmode';
 import Projects from './Components/Projects/Projects';
-import VideogameInfo from './Components/VideogameInfo/VideogameInfo';
+import VideogameInfo from './Components/Projects/VideogameInfo/VideogameInfo';
+import Carrusel from './Components/Carrusel/Carrusel';
 function App() {
 
   const [language,setLanguage]= useState('spanish')
@@ -34,6 +35,7 @@ function App() {
         <Route  path='/Contact' element={<Contact language={language} darkmode={darkMode}/>}/>
         <Route  path='/Projects' element={<Projects language={language} darkmode={darkMode}/>}/>
         <Route  path='/Projects/Videogames' element={<VideogameInfo language={language} darkmode={darkMode}/>}/>
+        <Route  path='/carrusel' element={<Carrusel/>}/>
       </Routes>
     </div>
     
