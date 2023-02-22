@@ -2,6 +2,9 @@ import  { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import darkstyle from './Contact.module.css'
 import lightstyle from './ContactW.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub,faLinkedin, faWhatsapp} from '@fortawesome/free-brands-svg-icons'
+import {   faPhone,faMailReply, faMailBulk, faMailForward} from '@fortawesome/free-solid-svg-icons';
 export default function Contact ({language,darkmode}) {
   const style = darkmode?darkstyle:lightstyle
   const [visiblyErrors,setVisibleErrors]=useState(false)
@@ -57,7 +60,7 @@ export default function Contact ({language,darkmode}) {
   message:'',
   user_phone:''
 })
-}
+} 
 
   return (
     <div>
@@ -65,9 +68,9 @@ export default function Contact ({language,darkmode}) {
         <div className={style.FirstContainer}>
           <div className={style.FormContainer}>
 
-          
+        
             <form  onSubmit={sendEmail} className={style.Form} ref={form}>
-                <label>* Nombre</label><span>{visiblyErrors&&errors.name}</span>
+                <label>* Name</label><span>{visiblyErrors&&errors.name}</span>
                 <input onChange={onChange} value={datos.user_name} type="text" name="user_name" />
               
 
@@ -90,30 +93,39 @@ export default function Contact ({language,darkmode}) {
             </form> 
            </div> 
             <div className={style.ChildContainer}>
-                <div>
-                    <h1>mi github</h1>
-                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Quos quasi esse pariatur deserunt earum labore laboriosam,
-                         iure natus, blanditiis delectus ab laborum molestias incidunt 
-                         nulla vero repellendus ea id enim!
-                    </span>
+                <div className={style.ContactsType}>
+                    <h2>mi github</h2>
+                     <span>Puedes echar un vistazo a mi perfil de github,
+                         mis proyectos y sus respectivos codigos.Ademas estare subiendo proyectos
+                         constantemente . 
+                    </span><br />
+                    <FontAwesomeIcon className={style.Icons} icon={faGithub}/>
                 </div>
-                <div>
-                    <h1>mi linkedin</h1>
-                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Quos quasi esse pariatur deserunt earum labore laboriosam,
-                         iure natus, blanditiis delectus ab laborum molestias incidunt 
-                         nulla vero repellendus ea id enim!
-                    </span>
+                <div className={style.ContactsType}>
+                    <h2>Mi linkedin</h2>
+                    <span>
+                     Puedes contactarme atraves de linkedin.Donde subo con frecuencia mis progresos.
+                     Si no deceas contactar puedes seguirme y ayudarme a ampliar mi red.
+                    </span> <br />
+                       <FontAwesomeIcon className={style.Icons} icon={faLinkedin} />
                 </div>
-                <div>
-                    <h1>mi email</h1>
-                    <h1>Mi numero </h1>
-                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Quos quasi esse pariatur deserunt earum labore laboriosam,
-                         iure natus, blanditiis delectus ab laborum molestias incidunt 
-                         nulla vero repellendus ea id enim!
-                    </span>
+                <div className={style.ContactsType}>
+                    <h2>mi email</h2>
+                    <span>Enviame un correo a :
+                         <a href='mailto:joakig6@gmail.com'>
+                            joakig6@gmail.com 
+                        </a> 
+                     </span> <br />
+                     <FontAwesomeIcon className={style.Icons} icon={faMailBulk}/>
+                </div>
+                <div className={style.ContactsType}>
+               
+                    <h2>Mi numero </h2>
+                    <span>
+                        Para llamados,mensajes de texto, whatsapp: +542216300954  
+                    </span><br />
+                    <FontAwesomeIcon className={style.Icons} icon={faPhone}/>
+                    <FontAwesomeIcon className={style.Icons} icon={faWhatsapp} style={{color:'green'}}/>
                 </div>
             </div>
 

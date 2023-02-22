@@ -24,7 +24,7 @@
     padding: 7px;
     margin-top:20px;
     margin-bottom:20px;
-    width: 110%;
+    width: 105%;
 }
 .Form textarea{
     float: left;
@@ -45,6 +45,21 @@
 .ChildContainer{
     width: 60%;
     border: 2px solid rgb(95, 117, 42);
+}
+.ContactsType{
+    border: 2px solid greenyellow;
+}
+.ContactsType span{
+  color: aliceblue;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.Icons{
+    width: 50px;
+    height: 50px;
 }
 @media(max-width:860px){
     .FirstContainer{
@@ -75,9 +90,14 @@
     }
    
     .ChildContainer{
-      display: flex;
+      display: grid;
       width: auto;
     }
+    .ContactsType span{
+        width:auto;
+        font-size: 17px;
+    }
+    
 }
 
 @media(max-width:501px){
