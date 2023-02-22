@@ -57,6 +57,7 @@
         display: flex;
         margin: 0 auto;
         width: 500px;
+        
     }
     .Form input{
         float: left;
@@ -77,4 +78,10 @@
       display: flex;
       width: auto;
     }
+}
+
+@media(max-width:501px){
+  .FormContainer{
+    width: auto;
+  }
 }
