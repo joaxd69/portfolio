@@ -1,5 +1,4 @@
 .FirstContainer{
-    border: 2px solid white;
     display: flex;
 }
 .FormContainer{
@@ -38,16 +37,21 @@
 }
 .Form button{
      display: inline-block;
-    background-color: aqua;
-    padding: 5px;
+    border: none;
+    margin-left: 25px;
+    padding: 8px;
     margin-top: 30px;
+    cursor: pointer;
+    background-color: rgb(217, 218, 219);
+}
+.Form button:hover{
+    background-color: rgb(196, 193, 193);
 }
 .ChildContainer{
     width: 60%;
-    border: 2px solid rgb(95, 117, 42);
 }
 .ContactsType{
-    border: 2px solid greenyellow;
+    border-bottom: 1px solid rgb(87, 77, 77);
 }
 .ContactsType span{
   color: aliceblue;
@@ -57,9 +61,40 @@
   font-size: 20px;
   letter-spacing: 1px;
 }
-.Icons{
-    width: 50px;
-    height: 50px;
+.ContactsType h2{
+    color: rgb(170, 165, 165)
+}
+.Github{
+    width: 70px;
+    height: 70px;
+    color: rgb(168, 182, 196);
+}
+.Linkedin{
+    width: 70px;
+    height: 70px;
+    color: rgb(8, 22, 151);
+    background: rgb(170, 165, 165);
+}
+.Email{
+    width: 70px;
+    height: 70px;
+    color: rgb(168, 182, 196);
+}
+.Phone{
+    width: 70px;
+    height: 70px;
+    color: rgb(168, 182, 196);  
+}
+.Whatsapp{
+    width: 70px;
+    height: 70px;
+    color: rgb(27, 182, 21);
+}
+.ContactLinks{
+    color: blue;
+}
+.ContactLinks:visited{
+    color: blue;
 }
 @media(max-width:860px){
     .FirstContainer{
