@@ -2,10 +2,18 @@
     border: 2px solid white;
     display: flex;
 }
-.Form{
-    color: white;
+.FormContainer{
     width: 40%;
-    border: 2px solid salmon;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Form{
+    background-color: rgb(41, 49, 56);
+    color: white;
+    width: 60%;
+    padding: 60px;
 }
 .Form label{
     display: block;
@@ -13,16 +21,24 @@
 }
 .Form input{
     float: left;
-    padding: 5px;
+    padding: 7px;
+    margin-top:30px;
+    width: 110%;
 }
 .Form textarea{
     float: left;
-    padding: 8px;
+     resize: vertical;
+     max-height: 180px;
+     max-width:100%;
+     min-height: 50px;
+    margin-top:30px;
+    width: auto;
 }
 .Form button{
      display: inline-block;
     background-color: aqua;
     padding: 5px;
+    margin-top: 30px;
 }
 .ChildContainer{
     width: 60%;

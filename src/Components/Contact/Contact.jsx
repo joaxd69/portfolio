@@ -63,7 +63,9 @@ export default function Contact ({language,darkmode}) {
     <div>
         <h1>Contactame:</h1>
         <div className={style.FirstContainer}>
+          <div className={style.FormContainer}>
 
+          
             <form  onSubmit={sendEmail} className={style.Form} ref={form}>
                 <label>* Nombre</label>
                 <input onChange={onChange} value={datos.user_name} type="text" name="user_name" />
@@ -86,17 +88,32 @@ export default function Contact ({language,darkmode}) {
 
                 <button type='button' onClick={reset}>Borrar datos</button>
             </form> 
-            
+           </div> 
             <div className={style.ChildContainer}>
                 <div>
                     <h1>mi github</h1>
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quos quasi esse pariatur deserunt earum labore laboriosam,
+                         iure natus, blanditiis delectus ab laborum molestias incidunt 
+                         nulla vero repellendus ea id enim!
+                    </span>
                 </div>
                 <div>
                     <h1>mi linkedin</h1>
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quos quasi esse pariatur deserunt earum labore laboriosam,
+                         iure natus, blanditiis delectus ab laborum molestias incidunt 
+                         nulla vero repellendus ea id enim!
+                    </span>
                 </div>
                 <div>
                     <h1>mi email</h1>
                     <h1>Mi numero </h1>
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quos quasi esse pariatur deserunt earum labore laboriosam,
+                         iure natus, blanditiis delectus ab laborum molestias incidunt 
+                         nulla vero repellendus ea id enim!
+                    </span>
                 </div>
             </div>
 
