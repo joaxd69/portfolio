@@ -44,3 +44,34 @@
     width: 60%;
     border: 2px solid rgb(95, 117, 42);
 }
+@media(max-width:860px){
+    .FirstContainer{
+        display: block;
+    }
+    .FormContainer{
+        display: flex;
+        margin: 0 auto;
+        width: fit-content;
+    }
+    .Form{
+        padding: 40px;
+    }
+    .Form input{
+        padding: 5px;
+        margin-top:20px;
+        width: 100%;
+    }
+    .Form textarea{
+        float: left;
+         resize: vertical;
+         max-height: 180px;
+         max-width:100%;
+         min-height: 50px;
+        margin-top:20px;
+        width: auto;
+    }
+    .ChildContainer{
+      display: flex;
+      width: auto;
+    }
+}
