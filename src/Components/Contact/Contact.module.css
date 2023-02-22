@@ -1,6 +1,9 @@
 .FirstContainer{
     display: flex;
 }
+.PrincipalTitle{
+    color: gray;
+}
 .FormContainer{
     width: 40%;
 
@@ -73,7 +76,8 @@
     width: 70px;
     height: 70px;
     color: rgb(8, 22, 151);
-    background: rgb(170, 165, 165);
+    background: rgba(0, 0, 0, 0.37);
+    border: 1px solid black;
 }
 .Email{
     width: 70px;

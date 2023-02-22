@@ -1,0 +1,144 @@
+.FirstContainer{
+    display: flex;
+    background-color: rgb(187, 214, 214);
+}
+
+.FormContainer{
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Form{
+    background-color: rgb(149, 199, 207);
+    color: rgb(0, 0, 0);
+    width: 60%;
+    padding: 60px;
+}
+.Form label{
+    display: block;
+    width: fit-content;
+}
+.Form input{
+    float: left;
+    padding: 7px;
+    margin-top:20px;
+    margin-bottom:20px;
+    width: 105%;
+}
+.Form textarea{
+    float: left;
+     resize: vertical;
+     max-height: 180px;
+     
+     min-height: 50px;
+     margin-top:20px;
+     margin-bottom:20px;
+    width: 100%;
+}
+.Form button{
+     display: inline-block;
+    border: none;
+    margin-left: 25px;
+    padding: 8px;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: rgb(243, 245, 247);
+}
+.Form button:hover{
+    background-color: rgb(216, 215, 215);
+}
+.ChildContainer{
+    width: 60%;
+}
+.ContactsType{
+    border-bottom: 1px solid rgb(87, 77, 77);
+}
+.ContactsType span{
+  color: rgb(0, 0, 0);
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.ContactsType h2{
+    color: rgb(0, 0, 0)
+}
+.Github{
+    width: 70px;
+    height: 70px;
+    color: rgb(51, 52, 53);
+}
+.Linkedin{
+    width: 70px;
+    height: 70px;
+    color: rgb(8, 22, 151);
+    background: rgba(170, 165, 165, 0);
+}
+.Email{
+    width: 70px;
+    height: 70px;
+    color: rgb(0, 0, 0);
+}
+.Phone{
+    width: 70px;
+    height: 70px;
+    color: rgb(0, 0, 0);  
+}
+.Whatsapp{
+    width: 70px;
+    height: 70px;
+    color: rgb(27, 182, 21);
+}
+.ContactLinks{
+    color: blue;
+}
+.ContactLinks:visited{
+    color: blue;
+}
+@media(max-width:860px){
+    .FirstContainer{
+        display: block;
+    }
+    .Form{
+        padding: 40px;
+    }
+    .FormContainer{
+        display: flex;
+        margin: 0 auto;
+        width: 500px;
+        
+    }
+    .Form input{
+        float: left;
+        padding: 7px;
+        margin-top:25px;
+        width: 100%;
+    }
+    .Form textarea{
+        float: left;
+         resize: vertical;
+         max-height: 180px;
+         min-height: 50px;
+         margin-top:25px;
+         width: 100%;
+    }
+   
+    .ChildContainer{
+      display: grid;
+      width: auto;
+    }
+    .ContactsType span{
+        width:auto;
+        font-size: 17px;
+    }
+    
+}
+
+@media(max-width:501px){
+  .FormContainer{
+    width: auto;
+  }
+}

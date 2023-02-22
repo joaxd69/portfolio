@@ -64,7 +64,7 @@ export default function ContactEN ({darkmode}) {
 
   return (
     <div>
-        <h1 style={{color:'rgb(170, 165, 165)'}}>Contact me :</h1>
+        <h1 className={style.PrincipalTitle}>Contact me :</h1>
         <div className={style.FirstContainer}>  
           <div className={style.FormContainer}>
       
@@ -97,18 +97,25 @@ export default function ContactEN ({darkmode}) {
             <div className={style.ChildContainer}>
                 <div className={style.ContactsType}>
                     <h2>My github</h2>
-                     <span>You can check my <a className={style.ContactLinks} href="https://github.com/joaxd69">Git hub</a> profile
+                     <span>You can check my <a className={style.ContactLinks} target="_blank" href="https://github.com/joaxd69">Git hub</a> profile
                         and my projects and their respectives code. I will be uploading other projects frequently.
                     </span><br />
+                    <a className={style.ContactLinks} target="_blank" href="https://github.com/joaxd69">
                     <FontAwesomeIcon className={style.Github} icon={faGithub}/>
+                    </a>              
                 </div>
                 <div className={style.ContactsType}>
                     <h2>My Linkedin</h2>
                     <span>
-                    You can contact me  in <a className={style.ContactLinks} href="https://www.linkedin.com/in/joaquin-garcia-392a9a259/">Linkedin</a> 
+                    You can contact me  in
+                     <a className={style.ContactLinks}
+                    target="_blank" href="https://www.linkedin.com/in/joaquin-garcia-392a9a259/">Linkedin</a> 
                     ,where i upload my projects frecuently .If you don't want to contact me, you can follow me and help me to expand my network.
                     </span> <br />
-                       <FontAwesomeIcon className={style.Linkedin} icon={faLinkedin} />
+                    <a className={style.ContactLinks} target="_blank" href="https://www.linkedin.com/in/joaquin-garcia-392a9a259/">
+                        <FontAwesomeIcon className={style.Linkedin} icon={faLinkedin} />
+                    </a>
+                       
                 </div>
                 <div className={style.ContactsType}>
                     <h2>My Email</h2>
@@ -117,7 +124,9 @@ export default function ContactEN ({darkmode}) {
                             joakig6@gmail.com 
                         </a> 
                      </span> <br />
+                     <a href='mailto:joakig6@gmail.com'>
                      <FontAwesomeIcon className={style.Email} icon={faMailBulk} />
+                     </a> 
                    
                 </div>
         
@@ -125,10 +134,15 @@ export default function ContactEN ({darkmode}) {
                
                     <h2>My phone number: </h2>
                     <span>
-                      For calls,text menssages or whatsapp: +542216300954  
+                      For calls,text menssages or 
+                      <a className={style.ContactLinks} target="_blank" href="https://wa.me/+5492216300954?">whatsapp</a>
+                      : +542216300954  
                     </span><br />
                     <FontAwesomeIcon className={style.Phone} icon={faPhone}/>
-                    <FontAwesomeIcon className={style.Whatsapp} icon={faWhatsapp}/>
+                    <a href="https://wa.me/+5492216300954?" target="_blank">
+                     <FontAwesomeIcon className={style.Whatsapp} icon={faWhatsapp}/>   
+                    </a>
+                    
                 
                 </div>
             </div>

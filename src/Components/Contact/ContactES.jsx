@@ -64,7 +64,7 @@ export default function ContactES ({darkmode}) {
 
   return (
     <div>
-        <h1 style={{color:'rgb(170, 165, 165)'}}>Contactame :</h1>
+        <h1 className={style.PrincipalTitle}>Contactame :</h1>
         <div className={style.FirstContainer}>  
           <div className={style.FormContainer}>
       
@@ -97,19 +97,28 @@ export default function ContactES ({darkmode}) {
             <div className={style.ChildContainer}>
                 <div className={style.ContactsType}>
                     <h2>Mi github</h2>
-                     <span>Puedes echar un vistazo a mi perfil de <a className={style.ContactLinks} href="https://github.com/joaxd69">Git hub</a>,
+                     <span>Puedes echar un vistazo a mi perfil de <a className={style.ContactLinks} 
+                     href="https://github.com/joaxd69" target="_blank">
+                    Git hub
+                    </a>,
                          mis proyectos y sus respectivos codigos.Ademas estare subiendo proyectos
                          constantemente . 
                     </span><br />
+                    <a className={style.ContactLinks} target="_blank" href="https://github.com/joaxd69">
                     <FontAwesomeIcon className={style.Github} icon={faGithub}/>
+                    </a>     
                 </div>
                 <div className={style.ContactsType}>
                     <h2>Mi linkedin</h2>
                     <span>
-                     Puedes contactarme atraves de <a className={style.ContactLinks} href="https://www.linkedin.com/in/joaquin-garcia-392a9a259/">Linkedin</a> .Donde subo con frecuencia mis progresos.
+                     Puedes contactarme atraves de <a className={style.ContactLinks}
+                     target="_blank" href="https://www.linkedin.com/in/joaquin-garcia-392a9a259/">Linkedin</a> .
+                     Donde subo con frecuencia mis progresos.
                      Si no deceas contactar puedes seguirme y ayudarme a ampliar mi red.
                     </span> <br />
-                       <FontAwesomeIcon className={style.Linkedin} icon={faLinkedin} />
+                    <a className={style.ContactLinks} href="https://www.linkedin.com/in/joaquin-garcia-392a9a259/" target="_blank">
+                        <FontAwesomeIcon className={style.Linkedin} icon={faLinkedin} />
+                    </a>
                 </div>
                 <div className={style.ContactsType}>
                     <h2>Mi correo electronico</h2>
@@ -118,7 +127,10 @@ export default function ContactES ({darkmode}) {
                             joakig6@gmail.com 
                         </a> 
                      </span> <br />
+                     <a href='mailto:joakig6@gmail.com'>
                      <FontAwesomeIcon className={style.Email} icon={faMailBulk} />
+                     </a> 
+                   
                    
                 </div>
         
@@ -126,10 +138,14 @@ export default function ContactES ({darkmode}) {
                
                     <h2>Mi numero </h2>
                     <span>
-                        Para llamados,mensajes de texto, whatsapp: +542216300954  
+                        Para llamados,mensajes de texto, 
+                        <a className={style.ContactLinks} href="https://wa.me/+5492216300954?" target="_blank">whatsapp</a>
+                         : +542216300954  
                     </span><br />
                     <FontAwesomeIcon className={style.Phone} icon={faPhone}/>
-                    <FontAwesomeIcon className={style.Whatsapp} icon={faWhatsapp}/>
+                    <a href="https://wa.me/+5492216300954?" target="_blank">
+                     <FontAwesomeIcon className={style.Whatsapp} icon={faWhatsapp}/>   
+                    </a>
                 
                 </div>
             </div>
