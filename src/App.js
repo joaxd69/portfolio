@@ -31,7 +31,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home language={language} darkmode={darkMode}/>}/>
         <Route  path='/about' element={<About language={language} darkmode={darkMode}/>}/>
-        <Route  path='/Contact' element={<Contact/>}/>
+        <Route  path='/Contact' element={<Contact language={language} darkmode={darkMode}/>}/>
         <Route  path='/Projects' element={<Projects language={language} darkmode={darkMode}/>}/>
         <Route  path='/Projects/Videogames' element={<VideogameInfo language={language} darkmode={darkMode}/>}/>
       </Routes>

@@ -1,0 +1,30 @@
+.FirstContainer{
+    border: 2px solid white;
+    display: flex;
+}
+.Form{
+    color: white;
+    width: 40%;
+    border: 2px solid salmon;
+}
+.Form label{
+    display: block;
+    width: fit-content;
+}
+.Form input{
+    float: left;
+    padding: 5px;
+}
+.Form textarea{
+    float: left;
+    padding: 8px;
+}
+.Form button{
+     display: inline-block;
+    background-color: aqua;
+    padding: 5px;
+}
+.ChildContainer{
+    width: 60%;
+    border: 2px solid rgb(95, 117, 42);
+}
