@@ -1,11 +1,20 @@
 import Carrusel from '../../Carrusel/Carrusel'
 import darkStyle from './VideogameInfo.module.css'
 import lightStyle from './VideogameInfoW.module.css'
-import image1 from '../../../assets/Videogame.png'
-import image2 from '../../../assets/Videogameresp.jpeg'
+import image1 from '../../../assets/Videogame1.png'
+import image2 from '../../../assets/Videogame2.png'
+import image3 from '../../../assets/Videogame3.png'
+import image4 from '../../../assets/Videogame4.png'
+import image5 from '../../../assets/Videogame5.png'
+import image6 from '../../../assets/Videogame6.png'
+import image7 from '../../../assets/Videogame7.png'
+import image8 from '../../../assets/Videogame8.png'
+import image9 from '../../../assets/Videogame9.png'
+import image10 from '../../../assets/Videogame10.png'
+import image12 from '../../../assets/Videogameresp.jpeg'
 export default function VideogameES({darkmode}){
     const style = darkmode?darkStyle:lightStyle
-    let images=[image1,image2]
+    let images=[image1,image2,image3,image4,image5,image6,image7,image8,image9,image10,image12]
     return(
         <div className={style.PrincipalContainer}>
            <h1>Proyecto individual : Tematica videojuegos</h1> 
