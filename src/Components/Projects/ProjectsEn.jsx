@@ -1,6 +1,6 @@
 import darkstyle from './Projects.module.css'
 import lightstyle from './ProjectsW.module.css'
-import videogameimg from '../../assets/Videogame.png'
+import videogameimg from '../../assets/Videogame.jpg'
 import videogameresp from '../../assets/Videogameresp.jpeg'
 import talkapimg from '../../assets/talkap.png'
 import talkapresp from '../../assets/TalkapResponsive.jpeg'
