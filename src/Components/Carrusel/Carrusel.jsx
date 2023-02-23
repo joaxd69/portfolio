@@ -1,38 +1,43 @@
 import style from './Carrusel.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub,faLinkedin, faWhatsapp} from '@fortawesome/free-brands-svg-icons'
-import { faPhone,faMailBulk, faArrowAltCircleLeft, faArrowCircleLeft, faArrowLeftLong, faArrowCircleRight} from '@fortawesome/free-solid-svg-icons';
+import { faArrowCircleLeft, faArrowCircleRight} from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react'
 
 export default function Carrusel({images}){
       const [actualImage,setActualImage]= useState(0)
       const [respImage,setRespImage]=useState(false)
+      const [lastimage,setLastImage]=useState(0)
        useEffect(()=>{
-        const action =()=>{     
+         let imagenact= document.getElementById(actualImage)
+         let lasstimage= document.getElementById(lastimage)
+        const action =()=>{
+          
+             lasstimage.style.border='none'
             images[actualImage].includes('resp')?setRespImage(true):setRespImage(false)
+            imagenact.style.border='2px solid red'
+            setLastImage(actualImage)
         }
         action()
-       },[actualImage])
+       },[actualImage,images,lastimage])
+
        const handleNext = (e)=>{
         e.preventDefault();
-       actualImage<images.length-1&&setActualImage(actualImage+1)
+       
+       actualImage<images.length-1&&setActualImage(actualImage+1);
+       actualImage===images.length-1&&setActualImage(0)
       }
     
 
       const handlePrev = (e)=>{
       e.preventDefault();
       actualImage>0&&setActualImage(actualImage-1);
-    
-
+      actualImage===0&&setActualImage(images.length-1)
       }
 
       const handleSelect = (e)=>{
         e.preventDefault();
         setActualImage(parseInt(e.target.id));
       }
-
-   
-
     return (
        <div className={style.FirstContainer}>
           <div className={style.Carrusel}> 
@@ -49,11 +54,9 @@ export default function Carrusel({images}){
                 <FontAwesomeIcon icon={faArrowCircleRight}/> 
                 </button> 
             </div>
- <section className={style.PrevPhotos}>
+ <section className={style.PrevPhotos} >
              {images&&images.map((i,index)=>
-  
-                <img src={i} key={index} alt={i} id={index} width='80' 
-                height='80' onClick={handleSelect} />
+                <img src={i} key={index} alt={i} id={index}  onClick={handleSelect} className='imagen' />
             )}
           </section>
          

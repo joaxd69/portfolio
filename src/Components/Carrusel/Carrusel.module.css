@@ -3,8 +3,6 @@
     justify-content: center;
 }
 .Carrusel{
-    border: 2px solid white;
-    background-color: aliceblue;
      width: 100%;
      height: 500px ;
 }
@@ -15,6 +13,28 @@
 .Imageweb{
     width:800px;
     height:500px
+}
+.ButtonsCarrusel button{
+    background-color: rgb(49, 223, 223);
+    padding: 5px;
+    margin-left: 15px;   
+    margin-right: 15px;   
+    cursor: pointer;
+    width: 55px;
+    font-size: 17px;
+}
+.ButtonsCarrusel button:hover{
+    background-color: rgb(212, 248, 248);
+}
+.imagen.seleccionada {
+    border: 2px solid red;
+  }
+  
+.PrevPhotos img{
+    height: 70px;
+    width: 70px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
 @media(max-width:1268px){
     .Imageweb{
