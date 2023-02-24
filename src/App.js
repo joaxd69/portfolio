@@ -35,7 +35,6 @@ function App() {
         <Route  path='/Contact' element={<Contact language={language} darkmode={darkMode}/>}/>
         <Route  path='/Projects' element={<Projects language={language} darkmode={darkMode}/>}/>
         <Route  path='/Projects/Videogames' element={<VideogameInfo language={language} darkmode={darkMode}/>}/>
-        <Route  path='/carrusel' element={<Carrusel/>}/>
       </Routes>
     </div>
     

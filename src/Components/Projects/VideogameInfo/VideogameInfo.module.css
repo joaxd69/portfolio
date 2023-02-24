@@ -1,33 +1,45 @@
-.PrincipalContainer{
-    border: 2px solid white;
+.Title{
+    color: #d5e9ee;
+    font-size: 37px;
+    text-decoration: underline;
 }
 .SecondContainer{
-    border: 1px solid orange;
     display: flex;
 
 }
 .DetailsContainer{
-    border: 1px solid green;
     width: 40%;
 }
-.DetailsContainer span{
+.DetailsContainer h2{
+    color: #d5e9ee;
+}
+.DetailsContainer p{
     color: aliceblue;
     font-size: 18px;
     letter-spacing: 1px;
-    
+    text-align: left;    
+}
+.DetailsContainer button{
+  border: none;
+  padding: 7px;
+  margin: 4px;
+  background-color: rgb(164, 175, 175);
+  cursor: pointer;
+}
+.DetailsContainer button:hover{
+  background-color: rgb(94, 182, 185)
 }
 .CarruselContainer{
-    border: 1px solid salmon;
     width: 60%;
-    background-color: rgb(75, 100, 122);
+
 }
 .TecSection{
     display: flex;
     height: auto;
+    border-top: 1px solid grey;
 }
 .TitleSecTec{
   color: #f0f8ff;
-  border: 1px solid red;
   width: 40%;
 }
 .TitleSecTec h1{
@@ -35,12 +47,10 @@
 }
 .Tecnologies{
     display: flex;
+    width: 50%;
     color: aquamarine;
     align-items: center;
-}
-.Tecnologies span{
-    width: max-content;
-    font-size: 20px;
+    justify-content: space-between;
 }
 
 @media(max-width:950px){
@@ -55,5 +65,22 @@
     }
     .CarruselContainer{
         width: auto;
+    }
+    .Tecnologies img{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .Tecnologies{
+        display: contents;
+    }
+}
+@media(max-width:640px){
+    .TitleSecTec{
+        width: 100%;
+    }
+    .TecSection{
+        display: flex;
+        flex-wrap: wrap;
+        
     }
 }
