@@ -34,7 +34,7 @@ export default function VideogameES({darkmode}){
      }
      action()
      
-    },[actualsection])
+    },[actualsection,lastSection])
 
     const [options,setOptions]=useState({
         Front:false,
@@ -48,8 +48,9 @@ export default function VideogameES({darkmode}){
       if(e.target.value==='Front'){setOptions({Front:true,Back:false,DB:false});setActualSection(e.target.value)}
       if(e.target.value==='Back'){setOptions({Front:false,Back:true,DB:false});setActualSection(e.target.value)}
       if(e.target.value==='DB'){setOptions({Front:false,Back:false,DB:true});setActualSection(e.target.value)}
-  
     }
+    const styledarkmode= darkmode?{backgroundColor:'rgb(166, 169, 172)',marginTop:'15px',padding:'2px'}:
+                                   {backgroundColor:' rgba(255, 255, 255, 0)',marginTop:'15px',padding:'2px'}
     return(
         <div className={style.PrincipalContainer}>
            <h1 className={style.Title}>Proyecto individual : Tematica videojuegos</h1> 
@@ -114,7 +115,8 @@ export default function VideogameES({darkmode}){
                         <IconComponent name={'redux'} height='50' width='50'/>
                         <IconComponent name={'postgres'} height='50' width='50'/>
                         <IconComponent name={'node'} height='50' width='55' styles={{backgroundColor:'white'}} />
-                        <IconComponent name={'express'} height='30' width='110' styles={{backgroundColor:'rgb(166, 169, 172)',marginTop:'15px',padding:'2px'}} />
+                        <IconComponent name={'express'}  height='30' width='110'
+                         styles={styledarkmode} />
                     </div>         
             </section>
         </div>

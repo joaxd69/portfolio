@@ -9,7 +9,6 @@ import Home from './Components/Home/Home';
 import Darkmode from './Components/Darkmode/Darkmode';
 import Projects from './Components/Projects/Projects';
 import VideogameInfo from './Components/Projects/VideogameInfo/VideogameInfo';
-import Carrusel from './Components/Carrusel/Carrusel';
 function App() {
 
   const [language,setLanguage]= useState('spanish')

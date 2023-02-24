@@ -20,7 +20,7 @@ export default function IconComponent ({name,width,height,styles}){
     return (
         <div>
         {icon[name]&&
-        <img src={icon[name]} height={height} width={width} style={style}/>
+        <img className={name} alt={`${name} ima`} src={icon[name]} height={height} width={width} style={style}/>
         }
         <h5 style={{margin:'0'}}>{name}</h5>
         </div>
