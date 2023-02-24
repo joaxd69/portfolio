@@ -12,6 +12,8 @@ import image8 from '../../../assets/Videogame8.jpg'
 import image9 from '../../../assets/Videogame9.jpg'
 import image10 from '../../../assets/Videogame10.jpg'
 import image12 from '../../../assets/Videogameresp.jpeg'
+import IconComponent from '../../IconComponent/IconComponent'
+
 export default function VideogameES({darkmode}){
     const style = darkmode?darkStyle:lightStyle
     let images=[image1,image2,image3,image4,image5,image6,image7,image8,image9,image10,image12]
@@ -43,17 +45,24 @@ export default function VideogameES({darkmode}){
 
             </div>
 
-            <div className={style.Teconologies}>
-
-                    <h1 >tecnologias usadas</h1> 
-                    <span>javascript</span>
-                    <span>react</span>
-                    <span>redux</span>
-                    <span>postgres</span>
-                    <span>Css</span>
-                    <span>Node.js</span>
-                    <span>Express</span>
-            </div>
+            <section className={style.TecSection}>
+                     <div className={style.TitleSecTec}>
+                         <h1 >Tecnologias usadas</h1>   
+                     </div>
+                    <div className={style.Tecnologies}>
+                        <IconComponent name={'javascript' } height='50' width='50'/>
+                        <IconComponent name={'css' } height='50' width='50'/>
+                        <IconComponent name={'react'} height='50' width='50'/>
+                        <IconComponent name={'redux'} height='50' width='50'/>
+                        <IconComponent name={'postgres'} height='50' width='50'/>
+                        <IconComponent name={'node'} height='50' width='55' styles={{backgroundColor:'white'}} />
+                        <IconComponent name={'express'} height='50' width='100' styles={{backgroundColor:'black'}} />
+                        <span>postgres</span>
+                        <span>Css</span>
+                        <span>Node.js</span>
+                        <span>Express</span> 
+                    </div>         
+            </section>
         </div>
     )
 }

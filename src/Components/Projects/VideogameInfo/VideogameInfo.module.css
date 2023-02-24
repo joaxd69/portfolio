@@ -21,8 +21,26 @@
     width: 60%;
     background-color: rgb(75, 100, 122);
 }
-.Teconologies{
-    display: inline-block;
+.TecSection{
+    display: flex;
+    height: auto;
+}
+.TitleSecTec{
+  color: #f0f8ff;
+  border: 1px solid red;
+  width: 40%;
+}
+.TitleSecTec h1{
+ text-decoration:underline;
+}
+.Tecnologies{
+    display: flex;
+    color: aquamarine;
+    align-items: center;
+}
+.Tecnologies span{
+    width: max-content;
+    font-size: 20px;
 }
 
 @media(max-width:950px){
