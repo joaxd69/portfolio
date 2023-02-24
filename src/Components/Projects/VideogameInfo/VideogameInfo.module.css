@@ -3,6 +3,23 @@
     font-size: 37px;
     text-decoration: underline;
 }
+.buttondeploy{
+    border: none;
+    padding: 7px;
+    margin: 4px;
+    background-color: rgb(164, 175, 175);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+.buttondeploy a{ 
+   text-decoration: none;
+}
+.buttondeploy a:visited{ 
+    color: rgb(0, 0, 0);
+ }
+ .buttondeploy:hover{
+    background-color: rgb(94, 182, 185)
+  }
 .SecondContainer{
     display: flex;
 

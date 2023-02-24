@@ -54,11 +54,14 @@ export default function VideogameES({darkmode}){
     return(
         <div className={style.PrincipalContainer}>
            <h1 className={style.Title}>Individual project : Video game theme</h1> 
-          
+          <button className={style.buttondeploy}>
+                    <a href="https://videogames-deploy-nine.vercel.app/" target='_blank'>Go to Appweb</a>     
+         </button>
             <div className={style.SecondContainer}>
 
                 <div className={style.DetailsContainer}>
                     <h2>Details :</h2>
+                    
                   <p>
                   This web application is my individual project done at henry's bootcamp. The objective was to apply and
                   connect all my knowledge learned during the course.My web application has a front end built with technologies like
@@ -103,7 +106,6 @@ export default function VideogameES({darkmode}){
                 <div className={style.CarruselContainer}>
                    <Carrusel images={images}/>
                 </div>
-
             </div>
 
             <section className={style.TecSection}>
