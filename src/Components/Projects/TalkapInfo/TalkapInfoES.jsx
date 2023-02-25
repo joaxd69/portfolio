@@ -17,8 +17,9 @@ import { useEffect, useState } from 'react'
 
 export default function TalkapInfoES({darkmode}){
     const style = darkmode?darkStyle:lightStyle  
-    const [ actualsection,setActualSection]=useState('Back')
-    const [ lastSection,setLastSection]=useState('Back')
+    const [ actualsection,setActualSection]=useState('Contributions')
+    const [ lastSection,setLastSection]=useState('Contributions')
+    const [ myworks,setMyworks]=useState('backend')
     
  
     useEffect(()=>{
@@ -38,19 +39,24 @@ export default function TalkapInfoES({darkmode}){
 
     const [options,setOptions]=useState({
         Front:false,
-        Back:true,
-        DB:false
+        Back:false,
+        DB:false,
+        contribution:true
     })
   
     let images=[image1,image2,image3,image4,image5,image6,image7,image8,image9,image10]
     const handleChange=(e)=>{
       e.preventDefault();
-      if(e.target.value==='Front'){setOptions({Front:true,Back:false,DB:false});setActualSection(e.target.value)}
-      if(e.target.value==='Back'){setOptions({Front:false,Back:true,DB:false});setActualSection(e.target.value)}
-      if(e.target.value==='DB'){setOptions({Front:false,Back:false,DB:true});setActualSection(e.target.value)}
+      if(e.target.value==='Front'){setOptions({Front:true,Back:false,DB:false,contribution:false});setActualSection(e.target.value)}
+      if(e.target.value==='Back'){setOptions({Front:false,Back:true,DB:false,contribution:false});setActualSection(e.target.value)}
+      if(e.target.value==='DB'){setOptions({Front:false,Back:false,DB:true,contribution:false});setActualSection(e.target.value)}
+      if(e.target.value==='Contributions'){setOptions({Front:false,Back:false,DB:false,contribution:true});setActualSection(e.target.value)}
     }
     const styledarkmode= darkmode?{backgroundColor:'rgb(166, 169, 172)',marginTop:'15px',padding:'2px'}:
                                    {backgroundColor:' rgba(255, 255, 255, 0)',marginTop:'15px',padding:'2px'}
+     const handleSelect =(e)=>{
+        e.target.value==='backend'?setMyworks('backend'):setMyworks('frontend')
+     }
     return(
         <div className={style.PrincipalContainer}>
            <h1 className={style.Title}>Proyecto grupal : Talkap</h1> 
@@ -71,7 +77,7 @@ export default function TalkapInfoES({darkmode}){
                    </p>
                    <h2>Funcionamiento</h2>
                    <div>
-                    <button onClick={handleChange} id='Contributions' value='Back'>Mis aportes.</button>
+                    <button onClick={handleChange} id='Contributions' value='Contributions'>Mis aportes.</button>
                     <button onClick={handleChange} id='Back' value='Back'>Back end.</button>
                     <button onClick={handleChange} id='Front' value='Front'> Front end.</button>
                     <button onClick={handleChange} id='DB'value='DB'>Base de datos.</button>
@@ -99,6 +105,26 @@ export default function TalkapInfoES({darkmode}){
                       Tambien guarda datos generales,como la cantidad total de usuarios, el total de los mensajes de toda la
                       aplicacion,si son donadores o no.
                     </p>}
+                    {options.contribution&&<p>
+                        Mis aportes fueron: <select name="" id="" onChange={handleSelect}> 
+                                  <option value="backend">Back end</option>
+                                  <option value="frontend">Front end</option>
+                                 </select>
+                         { myworks==='backend'&& <p>
+                            -Incorporar a Cloudinary como servicio para manejar imagenes,videos y audios que los usuarios envian, y guardarlos
+                            en la base de datos. <br />
+                            -Incorporar Stripe para que el usuario pueda hacer donaciones, y devolver mensaje de agradecimiento. <br />
+                            -Incorporar una lista de los usuarios que son donadores. </p> }
+                       {  myworks==='frontend'&& <p>
+                        -Permitir que el usuario pueda enviar imagenes y videos desde su galeria , convirtiendo los archivos en codigo 
+                        base 64 para que pueda ser recibido en mi servidor.<br />
+                        -Permitir que el usuario pueda grabar audios con su microfono y enviarlos.El audio tambien es convertido en codigo
+                        legible para el servidor. <br />
+                       - Lograr que las imagenes, videos y audios sean renderizados en los chats. <br />
+                       - Mostrar mensaje de agradecimiento, segundos despues de que el usuario hiciera una donacion.</p> }
+                    </p>
+
+                    }
                 </div>
 
                 <div className={style.CarruselContainer}>
