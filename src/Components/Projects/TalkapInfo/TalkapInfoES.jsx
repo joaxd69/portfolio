@@ -1,5 +1,5 @@
 import image1 from '../../../assets/talkap.png'
-import image2 from '../../../assets/Talkapresponsive.jpeg'
+import image2 from '../../../assets/talkapresponsive.jpeg'
 import image3 from '../../../assets/talkap3.png'
 import image4 from '../../../assets/talkap4.png'
 import image5 from '../../../assets/talkap5.png'
