@@ -1,0 +1,112 @@
+.PrincipalContainer{
+    background-color: rgb(194, 231, 231)
+}
+.Title{
+    color: #000000;
+    font-size: 37px;
+    text-decoration: underline;
+    margin: 0;
+}
+.buttondeploy{
+    border: none;
+    padding: 7px;
+    margin: 4px;
+    background-color: rgb(164, 175, 175);
+    cursor: pointer;
+    text-decoration: none;
+}
+.buttondeploy a{ 
+    text-decoration: none;
+ }
+ .buttondeploy a:visited{ 
+     color: rgb(0, 0, 0);
+  }
+  .buttondeploy:hover{
+    background-color: rgb(94, 182, 185)
+  }
+.SecondContainer{
+    display: flex;
+
+}
+.DetailsContainer{
+    width: 40%;
+}
+.DetailsContainer h2{
+    color: #000000;
+}
+.DetailsContainer p{
+    color: rgb(2, 2, 2);
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: left;    
+}
+.DetailsContainer button{
+  border: none;
+  padding: 7px;
+  margin: 4px;
+  background-color: rgb(164, 175, 175);
+  cursor: pointer;
+}
+.DetailsContainer button:hover{
+  background-color: rgb(94, 182, 185)
+}
+.CarruselContainer{
+    width: 60%;
+
+}
+.TecSection{
+    display: flex;
+    height: auto;
+    border-top: 1px solid grey;
+}
+.TitleSecTec{
+  color: #f0f8ff;
+  width: 40%;
+}
+.TitleSecTec h1{
+ text-decoration:underline;
+ color: #000000;
+}
+.Tecnologies{
+    display: flex;
+    width: 50%;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content:left;
+       flex-wrap: wrap;
+       width: auto;
+}
+.Tecnologies img{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+@media(max-width:950px){
+    .DetailsContainer span{
+        font-size: 15px;
+    }
+    .DetailsContainer{
+        width: auto;
+    }
+    .SecondContainer{
+        display: inline-block;
+    }
+    .CarruselContainer{
+        width: auto;
+    }
+    .Tecnologies img{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+}
+@media(max-width:640px){
+    .TitleSecTec{
+        width: 100%;
+    }
+    .TecSection{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+}

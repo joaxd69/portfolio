@@ -5,6 +5,12 @@ import redux from '../../icons/redux.jpg'
 import postgres from '../../icons/postgress.png'
 import node from '../../icons/node.png'
 import express from '../../icons/express.jpg'
+import auth0 from '../../icons/auth 0.png'
+import nodemailer from '../../icons/nodemailer.png'
+import socket from '../../icons/socket.png'
+import stripe from '../../icons/stripe.png'
+import chakra from '../../icons/chakra.jpg'
+import sequelize from '../../icons/sequelize.jpg'
 export default function IconComponent ({name,width,height,styles}){
   
     let icon={
@@ -14,7 +20,13 @@ export default function IconComponent ({name,width,height,styles}){
         redux,
         postgres,
         node,
-        express
+        express,
+        nodemailer,
+        auth0,
+        socket,
+        stripe,
+        chakra,
+        sequelize
      }
      const style= styles?styles:{}
     return (
