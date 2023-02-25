@@ -9,7 +9,7 @@ import {Link} from 'react-router-dom'
 export default function ProjectsEs({darkmode}){
     const style = darkmode?darkstyle:lightstyle
     return(
-
+  
         <div className={style.SecondContainer}>
           <h1 className={style.Title}>Mis proyectos</h1>
           <div className={style.Projects}>
