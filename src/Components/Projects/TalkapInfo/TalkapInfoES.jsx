@@ -114,7 +114,8 @@ export default function TalkapInfoES({darkmode}){
                             -Incorporar a Cloudinary como servicio para manejar imagenes,videos y audios que los usuarios envian, y guardarlos
                             en la base de datos. <br />
                             -Incorporar Stripe para que el usuario pueda hacer donaciones, y devolver mensaje de agradecimiento. <br />
-                            -Incorporar una lista de los usuarios que son donadores. </p> }
+                            -Incorporar una lista de los usuarios que son donadores.
+                      </p> }
                        {  myworks==='frontend'&& <p>
                         -Permitir que el usuario pueda enviar imagenes y videos desde su galeria , convirtiendo los archivos en codigo 
                         base 64 para que pueda ser recibido en mi servidor.<br />
