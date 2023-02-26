@@ -139,7 +139,7 @@ export default function TalkapInfoES({darkmode}){
                          <h1 >Tecnologias usadas :</h1>   
                      </div>
                     <div className={style.Tecnologies}>
-                        <IconComponent name={'javascript' } height='50' width='50'/>
+                    <IconComponent name={'javascript' } height='50' width='50'/>
                         <IconComponent name={'css' } height='50' width='50'/>
                         <IconComponent name={'react'} height='50' width='50'/>
                         <IconComponent name={'redux'} height='50' width='50'/>
@@ -151,8 +151,8 @@ export default function TalkapInfoES({darkmode}){
                          <IconComponent name={'nodemailer'} height='50' width='50'/>
                          <IconComponent name={'sequelize'} height='50' width='60'/>
                          <IconComponent name={'auth0'} height='50' width='90' 
-                         styles={{}}/>
-                         <IconComponent name={'socket'} height='50' width='50'/>
+                         styles={{backgroundColor:'rgb(166, 169, 172)'}}/>
+                         <IconComponent name={'socket'} height='50' width='50'styles={{backgroundColor:'rgb(166, 169, 172)'}}/>
                          <IconComponent name={'chakra'} height='50' width='50'/>
                          
                     </div>         

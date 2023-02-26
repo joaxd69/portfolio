@@ -1,0 +1,17 @@
+.PrincipalContainer{
+    border: 1px solid blue;
+}
+.SectionContainer{
+border: 1px solid red;
+
+}
+.FrontSection{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.FrontServices{
+    border: 1px solid yellow;
+}

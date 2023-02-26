@@ -46,7 +46,7 @@ export default function ProjectsEn ({darkmode}){
             
            <section className={style.ProjectInfo} >
              <span>
-              I worked as a team in develop of a web aplication.It was a project made at Henry bootcamp.
+              I worked in a team to develop  a web aplication.It was a project made at Henry bootcamp.
               It's an chat aplication where you can meet or add new friends and send them audio, messages ,videos or images.
               This aplications is achivied with socket io, Javascript, React, Redux, Chakra, Css, Express,Postgress , Node.js ,
               among other technologies.

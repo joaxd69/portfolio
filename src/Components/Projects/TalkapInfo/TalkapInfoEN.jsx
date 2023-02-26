@@ -68,17 +68,15 @@ export default function TalkapInfoEN({darkmode}){
                 <div className={style.DetailsContainer}>
                     <h2>Details</h2>
                   <p>
-                    This web aplicattion is the group project done in henry's bootcamp.It is a chat aplicattion,
+                    This web application is the group project done in henry's bootcamp.It is a chat application,
                     It is a chat application that allows many users and they  chat with each other in the main room or
                     in private with a specific user.The user can add users to friend list or delete them if the user want,
                     also the user can give a feedback to other users or block them.
                     
-                    
-
-            
-                   La aplicacion tiene un panel de administradores, donde los administradores podran ver las estadisticas de la aplicacion, usuarios
-                   registrados, total de mensajes enviados, donadores y tambien banear usuarios.El usuario puede enviar mensajes, videos , audios grabados,
-                   y hacer donaciones si quisiera.
+                    This web app has a administrations panel where the administrations can see the application statistics,
+                    for example, total registered users,total sended messages, donor users and can block any user.
+                     
+                    The user can send text messages, audios messages,videos and send donations if the user want.
                    </p>
                    <h2>Funcionamiento</h2>
                    <div>
@@ -88,46 +86,59 @@ export default function TalkapInfoEN({darkmode}){
                     <button onClick={handleChange} id='DB'value='DB'>Base de datos.</button>
                    </div>
                    {options.Back&&<p>
-                      Back end:
-                       El back end esta construido con node js, socket.io para manejar datos mas rapidamente en tiempo real,
-                       postgreSQL controlado con sequelize para almacenar los distintos datos de la aplicacion.
-                       Se uso express para el manejo de algunas rutas.Tambien se implementaron servicios externos, Cloudinary para 
-                       el manejo de imagenes,videos,audios, Nodemailer para el envios mails a los usuarios, stripe  para recibir donaciones,   
+                    -The back end is built whit node.js,sockte.io to handle data faster in real time. <br />
+                    -PostgreSQL controled by sequelize to host application data <br />
+                    -Express js , for the creation of query paths <br />
+                    -Were also implemented external services,like cloudinary for images ,videos,audios management <br /> 
+                    -Nodemailer for send mails to users <br />
+                    -Finally stripe  to  receive donations. 
                    </p>}
                   
                   { options.Front&& <p>
-                      Front end:El front end esta construido con Javascript,React, redux toolkit para manejar estados globales,
-                      Chakra como framework de componentes estilizados , css, socket.io y auth 0 para el registro de usuarios.
-                      La aplicacion tiene una landing page donde el usuario podra acceder a una seccion de about us y a una seccion de 
-                      de preguntas frecuentes sobre la aplicacion y sus respuestas.
-                      El usuario podra loguearse o registrarse si no lo esta.Cuando el usuario se registra , se le envia un mail de bienvenida,
-                      puede chatear con cualquier usuario registrado en la aplicacion.
-                      Es posible realizar donaciones para los desarrolladores atraves de un formulario que provee Stripe, luego de la donacion,
-                      el usuarios recibe un mail de agradecimiento,y una mensaje de agradecimiento en la aplicacion.
+                      The front end is built with Javascript,React.js,Redux toolkit to manage global states <br />
+                      Chakra.ui  as a framework of styled components and css <br />
+                      Socket.io to listen to socket.io routes from server. <br />
+                      Auth0  to users authentications <br />
+                      
+                      The app has a landing page  where the user can go to about section or
+                      frequent questions section about the application and their answers.
+                      
+                      The user can login or register if is'nt registered.When the user registers
+                      an welcome  email will be sent to the user email.
+                      All users can chat whith any registered user or chat among all users in general chat.
+
+                      it is possible to make donations to developers through a form provided by Stripe, after the donation,
+                      the user receives a thank you email,and a thank you message in the application.
                    </p>}
                    {options.DB&&<p>
-                      Base de datos: Se encarga de alojar los datos de los usuarios, sus chats,sus amigos, sus puntuaciones.
-                      Tambien guarda datos generales,como la cantidad total de usuarios, el total de los mensajes de toda la
-                      aplicacion,si son donadores o no.
+
+                     Database: 
+                      Database was made with postgreSQl and sequelize.
+                      It is responsible for hosting user data, 
+                      their chats,their friends, their scores etc.
+                      
+                      General data are stored for example: the total number of
+                       users, the total number of messages in the entire
+                      application,and information about who are donors.
                     </p>}
                     {options.contribution&&<p>
-                        Mis aportes fueron: <select name="" id="" onChange={handleSelect}> 
+                        My contributions:  <select name="" id="" onChange={handleSelect}> 
                                   <option value="backend">Back end</option>
                                   <option value="frontend">Front end</option>
                                  </select>
                          { myworks==='backend'&& <p>
-                            -Incorporar a Cloudinary como servicio para manejar imagenes,videos y audios que los usuarios envian, y guardarlos
-                            en la base de datos. <br />
-                            -Incorporar Stripe para que el usuario pueda hacer donaciones, y devolver mensaje de agradecimiento. <br />
-                            -Incorporar una lista de los usuarios que son donadores.
+
+                            -Incorporate Cloudinary as a service to manage images, videos 
+                            and audios that users send, and save them in the database. <br />
+                            -Incorporate Stripe so that the user can make donations, and return a thank you message. <br />
+                            -Incorporate a list of users donor users.
                       </p> }
                        {  myworks==='frontend'&& <p>
-                        -Permitir que el usuario pueda enviar imagenes y videos desde su galeria , convirtiendo los archivos en codigo 
-                        base 64 para que pueda ser recibido en mi servidor.<br />
-                        -Permitir que el usuario pueda grabar audios con su microfono y enviarlos.El audio tambien es convertido en codigo
-                        legible para el servidor. <br />
-                       - Lograr que las imagenes, videos y audios sean renderizados en los chats. <br />
-                       - Mostrar mensaje de agradecimiento, segundos despues de que el usuario hiciera una donacion.</p> }
+                       -Allow the user to send images and videos from his gallery,converting the files into base 64 so that it can be received on the server.<br />
+                       -Allow the users can 
+                        -Allow the user to record audios with his microphone and send them to the user.The audio is also converted to server-readable code. <br />
+                        - Make images, videos and audios visible in chats. <br />
+                        - Display a thank you message, seconds after the user made a donation.</p> }
                     </p>
 
                     }
@@ -141,7 +152,7 @@ export default function TalkapInfoEN({darkmode}){
 
             <section className={style.TecSection}>
                      <div className={style.TitleSecTec}>
-                         <h1 >Tecnologias usadas :</h1>   
+                         <h1 >Technologies used :</h1>   
                      </div>
                     <div className={style.Tecnologies}>
                         <IconComponent name={'javascript' } height='50' width='50'/>
@@ -156,8 +167,8 @@ export default function TalkapInfoEN({darkmode}){
                          <IconComponent name={'nodemailer'} height='50' width='50'/>
                          <IconComponent name={'sequelize'} height='50' width='60'/>
                          <IconComponent name={'auth0'} height='50' width='90' 
-                         styles={{}}/>
-                         <IconComponent name={'socket'} height='50' width='50'/>
+                         styles={{backgroundColor:'rgb(166, 169, 172)'}}/>
+                         <IconComponent name={'socket'} height='50' width='50'styles={{backgroundColor:'rgb(166, 169, 172)'}}/>
                          <IconComponent name={'chakra'} height='50' width='50'/>
                          
                     </div>         
