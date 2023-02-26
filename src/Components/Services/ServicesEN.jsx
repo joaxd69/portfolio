@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import lightstyles from './Services.module.css'
 import darkstyles from './ServicesW.module.css'
+import imgfrontserv1 from '../../assets/Frontservices1.png'
 export default function ServicesEN({darkmode}){
     const style= darkmode?darkstyles:lightstyles
     const [actualsection,setActualSection]=useState('front')
@@ -23,9 +24,10 @@ export default function ServicesEN({darkmode}){
              <section className={style.FrontSection}>
                     
                     <h3>Mi servicios sobre front end</h3>
-
-                    <article className={style.FrontServices}>
+                    <div className={style.ArticleContainer}>
+                       <article className={style.FrontServices}>
                         <h5>Creacion de paginas web de manera responsiva</h5>
+                        <picture></picture>
                     </article>
                     <article className={style.FrontServices}>
                         <h5>Desarrollo web de paginas estaticas y dinamica</h5>
@@ -36,6 +38,8 @@ export default function ServicesEN({darkmode}){
                     <article className={style.FrontServices}>
                        <h5>Desarrollo de UI/UX.</h5> 
                     </article>
+                     
+                    </div>
                     
                 </section>}
 
@@ -49,7 +53,23 @@ export default function ServicesEN({darkmode}){
                 </section>}
 
             </div>
+                  <div>
+                  <picture>
 
+  <source srcset={imgfrontserv1} media="(max-width: 480px)"/>
+  
+
+  <source srcset={imgfrontserv1}media="(max-width: 800px)"/>
+  
+ 
+  <source srcset={imgfrontserv1}/>
+  
+ 
+  <img src={imgfrontserv1} alt="Imagen de ejemplo"/>
+</picture>
+<hr />
+<img src={imgfrontserv1} alt="" />
+                  </div>
         </div>
     )
 }

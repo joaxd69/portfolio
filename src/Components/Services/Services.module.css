@@ -6,12 +6,18 @@ border: 1px solid red;
 
 }
 .FrontSection{
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    border: 1px solid rgb(74, 0, 104);
 }
-
+.ArticleContainer{
+    background-color: rgb(35, 153, 153);
+    display: flex;
+    justify-content:space-between ;
+}
 .FrontServices{
     border: 1px solid yellow;
+    display: inline-block;
+     width: 300px;
 }
+
+
+  
