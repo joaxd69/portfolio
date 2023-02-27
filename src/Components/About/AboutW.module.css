@@ -22,7 +22,45 @@
    width: 300px;
    border-radius:50px ;
  }
- 
+ .SkillsSection{
+   background-color: rgb(235, 247, 248);
+}
+.HardSkills{
+ display: flex;
+ flex-wrap: wrap;
+}
+.HardSkills h1{
+   font-size: 27px;
+   color: rgb(1, 1, 1);
+   margin: 0;
+}
+.HardSkills h5{
+   font-size: 15px;
+   color: rgb(0, 0, 0);
+}
+.HardSkills img{
+   margin-left:8px ;
+   margin-right:8px ;
+}
+
+.SoftSkills{
+
+   text-align: left;
+}
+.SoftSkills  h1{
+  font-size: 27px;
+  color: rgb(0, 0, 0);
+}
+.SoftSkills p{
+color: rgb(0, 0, 0);
+width: 70%;
+font-size: 20px;
+}
+.SoftSkills p span{
+   color: rgb(38, 45, 46);
+   border-bottom: solid 2px ;
+}
+
  @media(max-width:757px){
     .InfoContainer{
         display:list-item;

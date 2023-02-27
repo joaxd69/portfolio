@@ -11,6 +11,7 @@ import socket from '../../icons/socket.png'
 import stripe from '../../icons/stripe.png'
 import chakra from '../../icons/chakra.jpg'
 import sequelize from '../../icons/sequelize.jpg'
+import HTML from '../../icons/HTML.jpg'
 export default function IconComponent ({name,width,height,styles}){
   
     let icon={
@@ -26,7 +27,8 @@ export default function IconComponent ({name,width,height,styles}){
         socket,
         stripe,
         chakra,
-        sequelize
+        sequelize,
+        HTML
      }
      const style= styles?styles:{}
     return (

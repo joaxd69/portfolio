@@ -61,7 +61,7 @@ export default function TalkapInfoEN({darkmode}){
         <div className={style.PrincipalContainer}>
            <h1 className={style.Title}>Proyecto grupal : Talkap</h1> 
            <button className={style.buttondeploy}>
-                    <a href="https://videogames-deploy-nine.vercel.app/" rel="noopener noreferrer" target='_blank'>Ir a la aplicacion web</a>     
+                    <a href="https://client-deploy-wild-design.vercel.app/" rel="noopener noreferrer" target='_blank'>Ir a la aplicacion web</a> <span>(back end in repair)</span>    
          </button>
             <div className={style.SecondContainer}>
 
