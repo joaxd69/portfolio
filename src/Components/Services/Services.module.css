@@ -9,9 +9,14 @@ border: 1px solid red;
     border: 1px solid rgb(74, 0, 104);
 }
 .ArticleContainer{
-    background-color: rgb(35, 153, 153);
     display: flex;
     justify-content:space-between ;
+}
+.ArticleContainer img{
+    width: fit-content;
+    height: 155px;
+    background-color: rgb(223, 241, 241);
+ 
 }
 .FrontServices{
     border: 1px solid yellow;
