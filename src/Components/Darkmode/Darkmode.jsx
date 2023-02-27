@@ -5,11 +5,11 @@ import stylelight from './Darkmodew.module.css'
 export default function Darkmode ({darkmode,language,handleDarkChange}){
       const style = darkmode?styledark:stylelight
    return (
-    <div>
-        {language==="spanish"?
-        <section>
+  
+        language==="spanish"?
+       (
 
-          { darkmode ?<button className={style.Buttons} onClick={handleDarkChange} value='white'>  
+          darkmode ?<button className={style.Buttons} onClick={handleDarkChange} value='white'>  
                      Modo claro
                      <FontAwesomeIcon icon={faSun}  color='yellow'/>
                     </button>:
@@ -17,12 +17,12 @@ export default function Darkmode ({darkmode,language,handleDarkChange}){
                         Modo oscuro
                         <FontAwesomeIcon icon={faMoon}/>
                     </button>
-          }
           
-        </section>
+          
+       )
          :   
-         <section>
-         { darkmode ?<button className={style.Buttons} onClick={handleDarkChange} value='white'>  
+       
+         (darkmode ?<button className={style.Buttons} onClick={handleDarkChange} value='white'>  
                      Light mode
                      <FontAwesomeIcon icon={faSun}  color='yellow'/>
                     </button>:
@@ -30,10 +30,9 @@ export default function Darkmode ({darkmode,language,handleDarkChange}){
                         Dark mode
                         <FontAwesomeIcon icon={faMoon}/>
                     </button>
-          }
-         </section>
+          )
         
-        }
-    </div>
+        
+        
    )
 }

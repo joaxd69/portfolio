@@ -17,7 +17,12 @@
 }
 .Language{
   /* border-image: linear-gradient(to right, #ff8a00, #e52e71) 1;; */
-  padding: 15px;
+
   width: 300px;
  color: white;
+ display: inline;
+ 
+}
+.config{
+  margin-top: 10px;
 }

@@ -23,12 +23,16 @@ function App() {
   return (
     <div className="App">
       <Nav languaje={language} darkmode={darkMode}/>
-      <Darkmode language={language}
-      darkmode={darkMode}
-      handleDarkChange={handleDarkChange}/>
+      <section className='config'>
       <Language language={language} 
       handleChange={handleChange}
       darkmode={darkMode} />
+      <Darkmode language={language}
+      darkmode={darkMode}
+      handleDarkChange={handleDarkChange}/>
+   
+      </section>
+      
 
       <Routes>
         <Route path='/' element={<Home language={language} darkmode={darkMode}/>}/>
