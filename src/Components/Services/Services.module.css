@@ -1,27 +1,43 @@
 .PrincipalContainer{
-    border: 1px solid blue;
+    color: rgb(204, 202, 202);
 }
-.SectionContainer{
-border: 1px solid red;
+.PrincipalContainer h1{
+    font-size: 35px;
+    margin : 0;
+    color: rgb(100, 175, 164);
+    letter-spacing: 2px;
+    text-decoration: underline rgb(24, 64, 71);
+}
+.PrincipalContainer select{
+        padding: 3px;
+        background-color: rgb(201, 223, 215);
+        letter-spacing: 0.5px;
+}
+/* .SectionContainer{
+
 
 }
 .FrontSection{
-    border: 1px solid rgb(74, 0, 104);
-}
+   
+} */
 .ArticleContainer{
     display: flex;
-    justify-content:space-between ;
+    flex-wrap:wrap;
+    justify-content: center;
+    color: rgb(204, 202, 202);
+    font-size: 18px;
 }
 .ArticleContainer img{
     width: fit-content;
-    height: 155px;
-    background-color: rgb(223, 241, 241);
- 
+    height: 185px;
+    background-color: rgba(223, 241, 241, 0);
+    
 }
-.FrontServices{
-    border: 1px solid yellow;
-    display: inline-block;
+.Services{
+    border: 1px solid rgb(51, 51, 50);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;    display: inline-block;
      width: 300px;
+     margin: 9px;
 }
 
 
