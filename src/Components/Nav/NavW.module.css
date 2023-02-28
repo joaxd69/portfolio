@@ -78,7 +78,26 @@
 }
 @media(max-width:500px){
     .Buttons a{
-     font-size: 17px;
-    }
-    
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+       }
+       .ButtonsContainer{
+        background-color: rgba(209, 209, 209, 0.918);
+        position:fixed;
+        top: 0;
+        height: 101%;
+        width: 40%;
+        display: grid;
+        display:flow-root;
+        
+        
+       }
+       .Buttons{
+        display: block;
+        height: fit-content;
+        margin:0 auto;
+        margin-top: 50px;
+      
+       }
+       
  }

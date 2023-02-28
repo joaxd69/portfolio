@@ -10,7 +10,7 @@ export default function Nav ({languaje,darkmode}){
                                   {backgroundColor:'lightblue'}
    const fontcolor = darkmode?{color:'white'}:{color:'black'}
     return (
-        <div>
+        <div className={style.initialdiv}>
             {languaje==='spanish'?
                <nav className={style.Nav}> 
 
@@ -28,6 +28,13 @@ export default function Nav ({languaje,darkmode}){
                </div>
                
               <div className={style.ButtonsContainer}>
+                
+              <input type="checkbox" className={style.check} name=""
+                id="check" style={{display:'none'}} />
+               <label htmlFor="check" >
+                <FontAwesomeIcon icon={faBars} className={style.Menu} />
+                </label>
+                  
                  <button className={style.Buttons}>
                     <Link to = '/'>
                     <span>Home</span>
