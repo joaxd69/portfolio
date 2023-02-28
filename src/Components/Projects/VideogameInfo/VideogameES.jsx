@@ -14,6 +14,7 @@ import image10 from '../../../assets/Videogame10.jpg'
 import image12 from '../../../assets/Videogameresp.jpeg'
 import IconComponent from '../../IconComponent/IconComponent'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function VideogameES({darkmode}){
     const style = darkmode?darkStyle:lightStyle  
@@ -53,22 +54,24 @@ export default function VideogameES({darkmode}){
                                    {backgroundColor:' rgba(255, 255, 255, 0)',marginTop:'15px',padding:'2px'}
     return(
         <div className={style.PrincipalContainer}>
-           <h1 className={style.Title}>Proyecto individual : Tematica videojuegos</h1> 
+            <Link to='/Projects'>
+            <button className={style.GoBack}>Volver atras</button>
+            </Link>
+            
+           <h1 className={style.Title}>Proyecto individual: Temática videojuegos</h1> 
            <button className={style.buttondeploy}>
                     <a href="https://videogames-deploy-nine.vercel.app/" rel="noopener noreferrer" target='_blank'>Ir a la aplicacion web</a>     
          </button>
             <div className={style.SecondContainer}>
 
                 <div className={style.DetailsContainer}>
-                    <h2>detalles</h2>
+                    <h2>Detalles</h2>
                   <p>
-                   Esta aplicación web es mi  proyecto individual realizado en el bootcamp de henry que  tiene como objetivo aplicar y 
-                   conectar todos mis conocimientos aprendidos durante la cursada .Mi aplicación web consta de un front end construido 
-                   con tecnologías como javascript,react,redux y css puro. El back end fue construido con Node.js ,
-                   Express para la construcción de un API rest que permite realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar ),
-                   en los datos del servidor.
-                    Mi aplicación web  posee una base de datos construida con postgress manejada con sequelize desde mi servidor.
-                   </p>
+                  Esta aplicación web es mi proyecto individual realizado en el bootcamp de Henry que tiene como objetivo aplicar y conectar todos mis conocimientos
+                  aprendidos durante la cursada .Mi aplicación web consta de un Front end construido 
+                  con tecnologías como javascript,react,redux y css puro. 
+                  El back end fue construido con Node.js, Express para la construcción de un API rest que permite realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar ),
+                  en los datos del servidor. Mi aplicación web posee una base de datos construida con PostgreSQL manejada con Sequelize desde mi servidor.                   </p>
                    <h2>Funcionamiento</h2>
                    <div>
                     <button onClick={handleChange} id='Back' value='Back'>Back end</button>
@@ -76,27 +79,28 @@ export default function VideogameES({darkmode}){
                     <button onClick={handleChange} id='DB'value='DB'>Base de datos</button>
                    </div>
                    {options.Back&&<p>
-                      Back end: El servidor se conecta con una api externa, la cual ofrece informacion de mas de 800 mil juegos.
-                      Solo 100 juegos son manejados por mi servidor en un inicio, los cuales son enviados al front end.Atraves de las distintas,
-                      rutas generadas con express , el usuario desde el front end podra realizar un crud completo, ya que podra hacer peticiones, 
-                      GET para obtener los juegos y sus detalles, POST para subir detalles de un nuevo juego que sera guardado en la base de datos 
-                      , PUT para editar los detalles del juego que subio el usuario y DELETE para eliminar los detalles del juego que
-                      creo el usuario.      
+                    Back end: El servidor se conecta con una api externa, la cual ofrece información de más de 800 mil juegos. Solo 100 juegos son manejados por
+                     mi servidor en un inicio, los cuales son enviados al Front end. A través de las distintas, rutas generadas con Express , el usuario desde el 
+                     Front end podrá realizar un CRUD completo, ya que podrá hacer peticiones, GET para obtener los juegos y sus detalles, POST para subir detalles 
+                     de un nuevo juego que será guardado en la base de datos , PUT para editar los detalles del juego que subió el usuario y DELETE para eliminar 
+                     los detalles del juego que creo el usuario.      
                    </p>}
                   
                   { options.Front&& <p>
-                      Front end: Desde el front end se reciben los datos de las distintas rutas de mi servidor.Son paginados los 100 juegos
-                      y sus detalles que fueron configurados en mi servidor y  tambien los juegos creados por el usuario.El usuario podra buscar juegos
-                      en la barra de  busqueda y en caso de que no haya resultados podra elegir en "mostrar mas resultados",y sera redigirido a una seccion
-                      donde se obtienen mas resultados que son los juegos que no vienen inicialmente en mi servidor , si no que mi servidor hacer otra consulta 
+                    Front end: Desde el Front end se reciben los datos de las distintas rutas de mi servidor. Son paginados los 100 juegos
+                      y sus detalles que fueron configurados en mi servidor y también los juegos creados por el usuario. El usuario podrá buscar juegos
+                      en la barra de búsqueda y en caso de que no haya resultados podrá elegir en "more results" y será redirigido a una sección
+                      donde se obtienen más resultados que son los juegos que no vienen inicialmente en mi servidor, si no que mi servidor hacer otra consulta 
                       y devuelve nuevos juegos. 
-                      Puedo crear informacion acerca de un nuevo juego a traves de un formulario controlado con javascript, tambien es posible 
-                      agregar juegos a una seccion de favoritos, y eliminarlos si quisieramos. Ademas el usuario podra editar la informacion del juego
-                      creado o eliminar esa informacion.
+                      Puedo crear información acerca de un nuevo juego a través de un formulario controlado con JavaScript, también es posible 
+                      agregar juegos a una sección de favoritos, y eliminarlos si quisiéramos. Además, el usuario podrá editar la información del juego
+                      creado o eliminar esa información
+.
                    </p>}
                    {options.DB&&<p>
-                      Base de datos: Se encargar de alojar los juegos creados por el usuario.Sequelize desde el servidor se encarga,
-                      de requerir los datos,agregar nuevos datos, eliminarlos o editarlos, cada vez que el usuario lo requiera
+                    Base de datos: Se encarga de alojar los juegos creados por el usuario. Sequelize desde el servidor se encarga,
+                      de requerir los datos, agregar nuevos datos, eliminarlos o editarlos, cada vez que el usuario lo requiera
+
                     </p>}
                 </div>
 
@@ -115,7 +119,7 @@ export default function VideogameES({darkmode}){
                         <IconComponent name={'css' } height='50' width='50'/>
                         <IconComponent name={'react'} height='50' width='50'/>
                         <IconComponent name={'redux'} height='50' width='50'/>
-                        <IconComponent name={'postgres'} height='50' width='50'/>
+                        <IconComponent name={'postgreSQL'} height='50' width='50'/>
                         <IconComponent name={'node'} height='50' width='55' styles={{backgroundColor:'white'}} />
                         <IconComponent name={'express'}  height='30' width='110'
                          styles={styledarkmode} />

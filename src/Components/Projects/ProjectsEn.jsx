@@ -23,7 +23,7 @@ export default function ProjectsEn ({darkmode}){
             <span>
              This is my web aplication whith game tematic.I did this project in Henry bootcamp where I
              applied all my knowledges whta i've learned throughout the cuourse.I worked in front-end,back-end and database in this
-             aplication.This web app is created with  Javascript, React, Redux,Css,Node.js,Postgress,Express.
+             aplication.This web app is created with  Javascript, React, Redux,Css,Node.js,PostgreSQL,Express.
                <br />
              <Link to = 'videogames'>More details</Link>
             </span>
@@ -48,7 +48,7 @@ export default function ProjectsEn ({darkmode}){
              <span>
               I worked in a team to develop  a web aplication.It was a project made at Henry bootcamp.
               It's an chat aplication where you can meet or add new friends and send them audio, messages ,videos or images.
-              This aplications is achivied with socket io, Javascript, React, Redux, Chakra, Css, Express,Postgress , Node.js ,
+              This aplications is achivied with socket io, Javascript, React, Redux, Chakra, Css, Express,PostgreSQL , Node.js ,
               among other technologies.
                <br />
                <Link to='Talkap'>More details</Link>

@@ -14,6 +14,7 @@ import lightStyle from './TalkapInfoW.module.css'
 import IconComponent from '../../IconComponent/IconComponent'
 
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function TalkapInfoEN({darkmode}){
     const style = darkmode?darkStyle:lightStyle  
@@ -59,6 +60,9 @@ export default function TalkapInfoEN({darkmode}){
      }
     return(
         <div className={style.PrincipalContainer}>
+            <Link to='/Projects'>
+            <button className={style.GoBack}>Go back.</button>
+            </Link>
            <h1 className={style.Title}>Proyecto grupal : Talkap</h1> 
            <button className={style.buttondeploy}>
                     <a href="https://client-deploy-wild-design.vercel.app/" rel="noopener noreferrer" target='_blank'>Ir a la aplicacion web</a> <span>(back end in repair)</span>    
@@ -159,7 +163,7 @@ export default function TalkapInfoEN({darkmode}){
                         <IconComponent name={'css' } height='50' width='50'/>
                         <IconComponent name={'react'} height='50' width='50'/>
                         <IconComponent name={'redux'} height='50' width='50'/>
-                        <IconComponent name={'postgres'} height='50' width='50'/>
+                        <IconComponent name={'postgreSQL'} height='50' width='50'/>
                         <IconComponent name={'node'} height='50' width='55' styles={{backgroundColor:'white'}} />
                         <IconComponent name={'stripe'} height='50' width='100'/>
                         <IconComponent name={'express'}  height='30' width='110'

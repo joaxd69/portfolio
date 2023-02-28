@@ -112,3 +112,11 @@
         height: auto;
     } 
 }
+@media(max-width:500px){
+    .SecondContainer{
+        width: fit-content;
+    }
+    .ProjectInfo span{
+        font-size: 17px;
+    }
+}

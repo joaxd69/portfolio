@@ -21,12 +21,17 @@
   width: 300px;
   border-radius:50px ;
 }
-.SkillsSection{
-   border: 2px solid white;
-}
+.henrylogo{
+   width: 30px;
+   height: 35px;
+   position:relative;
+   width: fit-content;
+
+ }
+/* .SkillsSection{
+
+} */
 .HardSkills{
- border: 2px solid lightblue;
- 
  display: flex;
  flex-wrap: wrap;
 }
@@ -45,7 +50,6 @@
 }
 
 .SoftSkills{
-   border: 2px solid rgb(145, 216, 112);
    text-align: left;
 }
 .SoftSkills  h1{

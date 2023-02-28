@@ -76,3 +76,9 @@
     left: 0;
    }
 }
+@media(max-width:500px){
+    .Buttons a{
+     font-size: 17px;
+    }
+    
+ }

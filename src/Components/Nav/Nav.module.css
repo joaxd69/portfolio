@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-bottom:1px solid rgb(87, 77, 77);;
+    border-bottom:1px solid rgb(77, 86, 87);;
 }
 .Menu{
     display: none;
@@ -71,11 +71,17 @@
     }
    .ButtonsContainer{
    position: relative;
-   left: -100%;
+   left: -150%;
    transition: all .5s
    }
 
    .check:checked ~ .ButtonsContainer{
     left: 0;
    }
+}
+@media(max-width:500px){
+   .Buttons a{
+    font-size: 17px;
+   }
+   
 }

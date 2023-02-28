@@ -20,11 +20,11 @@ export default function ProjectsEs({darkmode}){
             
            <section className={style.ProjectInfo} >
              <span>
-               Mi aplicacion web con tematica de juegos es parte de un proyecto individual realizado en Henry(imagen)
-               en donde aplique todo mis conocimientos aprendidos a lo largo del curso.Trabaje en el front end, back end
-               y base de datos de esta aplicacion.Esta lograda con Javascript, React, Redux,Css,Node.js,Postgress,Express.
+             Mi aplicación web con temática de juegos es parte de un proyecto individual realizado en Henry(imagen)
+               en donde aplique todos mis conocimientos aprendidos a lo largo del curso. Trabajé en el Front end, back end
+               y base de datos de esta aplicación. Esta lograda con Javascript,React,Redux,Css,Node.js,PostgreSQL,Express.
                <br />
-               <Link to='videogames'>Mas detalles</Link>
+               <Link to='videogames'>MAS DETALLES</Link>
             </span>
            </section>
           </div>
@@ -44,14 +44,14 @@ export default function ProjectsEs({darkmode}){
             
            <section className={style.ProjectInfo} >
              <span>
-                 Trabaje en equipo en el desarrollo de una aplicacion web que fue un proyecto realizado 
-                 en el bootcamp de henry.
-                 Este proyecto es una aplicacion de chat donde puedes agregar amigos, enviarles audios, mensajes,videos,imagenes a 
-                 quien decees.
-                 Esta lograda con , socket io, Javascript, React, Redux, Chakra, Css, Express,Postgress , Node.js ,entre otras tecnologias
+             Trabaje en equipo en el desarrollo de una aplicación web que fue un proyecto realizado 
+                 en el bootcamp de Henry.
+                 Este proyecto es una aplicación de chat donde puedes agregar amigos, enviarles audios, mensajes, videos, imágenes a 
+                 quien desees.
+                 Esta lograda con, socket io, Javascript, React, Redux, Chakra, Css, Express,PostgreSQL , Node.js ,entre otras tecnologías
 
                <br />
-               <Link to='Talkap'>Mas detalles</Link>
+               <Link to='Talkap'>MAS DETALLES</Link>
             </span>
            </section>
           </div>

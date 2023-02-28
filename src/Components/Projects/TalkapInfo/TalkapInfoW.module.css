@@ -1,6 +1,15 @@
 .PrincipalContainer{
     background-color: rgb(194, 231, 231)
 }
+.GoBack{
+    float: left;
+    border: none;
+    padding: 10px;
+    margin: 4px;
+    background-color: rgb(164, 175, 175);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
 .Title{
     color: #000000;
     font-size: 37px;
@@ -110,3 +119,16 @@
         
     }
 }
+@media(max-width:500px){
+    .GoBack{
+    float: none;
+    display: inline-block;
+
+    }
+    .Title{
+        font-size: 20px;
+        display: block;
+         margin: 15px;
+    }
+    
+ }

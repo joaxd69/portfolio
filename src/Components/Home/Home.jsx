@@ -13,9 +13,9 @@ export default function Home({language,darkmode}){
               <h1 >Desarrollador web full stack</h1>
 
              <div className={style.SpanContainer}>
-             <span >Hola, mi nombre es joaquin.Soy desarrollador web full stack
-                con experiencia  en crear aplicaciones web trabajando tanto en front end,
-                 como en back end y base de datos.
+             <span >Hola, mi nombre es Joaquín. Soy desarrollador web full stack con
+               experiencia en crear aplicaciones web trabajando tanto en Front end, 
+               como en back end y base de datos.
               </span> 
              </div> 
 
@@ -25,14 +25,14 @@ export default function Home({language,darkmode}){
               <img  src={imagedev} alt="" width={150} height={200}/>
                 </div>
               <h1 className={style.Title}>Desarrollo Front-end</h1>
-              <span>Sitios web responsives,creados para una optima experiencia del usuario.</span>
+              <span>Sitios web responsives, creados para una óptima experiencia del usuario.</span>
               </div>
               <div className={style.Container2}>
                 <div className={style.ImageContainer}>
               <img  src={imageback} alt="" width={210} height={200}/>
                 </div>
               <h1 className={style.Title}>Desarrollo Back-end</h1>
-              <span>Back end con codigo prolijo,estilo modular,codigos escalables.
+              <span>Back end, con buen manejo de logica, capacidad crear APIs y manejar APIs externas.
 
               </span>
               </div>
@@ -51,7 +51,7 @@ export default function Home({language,darkmode}){
               <h1  >Full stack web developer</h1> 
               <div className={style.SpanContainer}>
                <span>Hi, my name is Joaquin,I'm Full stack web developer with experience in
-                 build web aplications, working on back end, front end and database
+                 build web aplications, working on back end, front end and database.
               </span>
               </div>
               <section className={style.Section1} >
@@ -67,7 +67,7 @@ export default function Home({language,darkmode}){
                 <img  src={imageback} alt="" width={210} height={200}/>
                 </div>
                 <h1 className={style.Title}>Back-end development</h1>
-                <span>Back-end with ordered code,modular style, scalable</span>
+                <span>Back end, with good logic handling, ability to create APIs and handle external APIs.</span>
               </div>
               <div className={style.Container2}>
                 <div className={style.ImageContainer}>

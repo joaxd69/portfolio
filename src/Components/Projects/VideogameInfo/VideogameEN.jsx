@@ -14,6 +14,7 @@ import image10 from '../../../assets/Videogame10.jpg'
 import image12 from '../../../assets/Videogameresp.jpeg'
 import IconComponent from '../../IconComponent/IconComponent'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function VideogameES({darkmode}){
     const style = darkmode?darkStyle:lightStyle  
@@ -52,7 +53,10 @@ export default function VideogameES({darkmode}){
     const styledarkmode= darkmode?{backgroundColor:'rgb(166, 169, 172)',marginTop:'15px',padding:'2px'}:
                                    {backgroundColor:' rgba(255, 255, 255, 0)',marginTop:'15px',padding:'2px'}
     return(
-        <div className={style.PrincipalContainer}>
+       <div className={style.PrincipalContainer}>
+             <Link to='/Projects'>
+            <button className={style.GoBack}>Go back.</button>
+            </Link>
            <h1 className={style.Title}>Individual project : Video game theme</h1> 
           <button className={style.buttondeploy}>
                     <a href="https://videogames-deploy-nine.vercel.app/" rel="noopener noreferrer" target='_blank'>Go to Appweb</a>     
@@ -63,13 +67,13 @@ export default function VideogameES({darkmode}){
                     <h2>Details :</h2>
                     
                   <p>
-                  This web application is my individual project done at henry's bootcamp. The objective was to apply and
+                  This web application is my individual project done at Henry's bootcamp. The objective was to apply and
                   connect all my knowledge learned during the course.My web application has a front end built with technologies like
-                  javascript,react,redux and pure css.
+                  JavaScript,React,Redux and pure CSS.
                    .Back end was built with Node.js ,
                    Express for the construction of a rest API that allows to make CRUD operations (Create, Read, Update and Delete),
                    in the server data.
-                    My web application has a database built whith postgress controlled with sequelize from my server.
+                    My web application has a database built whith postgreSQL controlled with Sequelize from my server.
                    </p>
                    <h2>Operation:</h2>
                    <div>
@@ -80,7 +84,7 @@ export default function VideogameES({darkmode}){
                    {options.Back&&<p>
                       Back end: The server connects to an external api, which returns information from more than 800 thousand games.
                       Only 100 games are managed by my server at the beginning, which are sent to the front end. 
-                      Through the different routes generated with express, the user from the front end will be able to perform a complete crud,
+                      Through the different routes generated with express, the user from the front end will be able to perform a complete CRUD,
                        so the user will be able to make requests, 
                        GET to get the games and their details, POST to upload details of a new game that will be saved in the database. 
                       , PUT to edit the details of the game uploaded by the user and DELETE to delete the details of the game created by the user.      
@@ -117,7 +121,7 @@ export default function VideogameES({darkmode}){
                         <IconComponent name={'css' } height='50' width='50'/>
                         <IconComponent name={'react'} height='50' width='50'/>
                         <IconComponent name={'redux'} height='50' width='50'/>
-                        <IconComponent name={'postgres'} height='50' width='50'/>
+                        <IconComponent name={'postgreSQL'} height='50' width='50'/>
                         <IconComponent name={'node'} height='50' width='55' styles={{backgroundColor:'white'}} />
                         <IconComponent name={'express'}  height='30' width='110'
                          styles={styledarkmode} />

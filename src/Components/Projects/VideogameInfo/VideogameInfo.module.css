@@ -2,6 +2,16 @@
     color: #d5e9ee;
     font-size: 37px;
     text-decoration: underline;
+    margin: 0;
+}
+.GoBack{
+    float: left;
+    border: none;
+    padding: 7px;
+    margin: 4px;
+    background-color: rgb(164, 175, 175);
+    cursor: pointer;
+    color: rgb(0, 0, 0); 
 }
 .buttondeploy{
     border: none;
@@ -101,3 +111,16 @@
         
     }
 }
+@media(max-width:500px){
+    .GoBack{
+    float: none;
+    display: inline-block;
+
+    }
+    .Title{
+        font-size: 20px;
+        display: block;
+         margin: 15px;
+    }
+    
+ }

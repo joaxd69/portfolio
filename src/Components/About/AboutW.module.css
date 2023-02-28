@@ -18,6 +18,13 @@
    width: 50%;
    text-align: left;
  }
+ .henrylogo{
+   width: 30px;
+   height: 35px;
+   position:relative;
+   width: fit-content;
+
+ }
  .image{
    width: 300px;
    border-radius:50px ;

@@ -18,7 +18,8 @@ export default function About({language,darkmode}){
                <div className={style.InfoContainer}>
                 <p className={style.info}>
                   Hola! soy Joaquin de 23 años actualmente.Soy desarrollador web fullstack egresado del bootcamp
-                  de Soy henry <span><img src={Henrry} alt="henr" width={50} height='50' /></span> , en donde adquiri conocimientos y desarrolle aplicaciones web de manera individual y 
+                  de Soy henry <span> <a href="https://www.soyhenry.com/" target='_blank'><img src={Henrry} className={style.henrylogo}/></a> </span> ,
+                   en donde adquiri conocimientos y desarrolle aplicaciones web de manera individual y 
                   de manera grupal. <br />
                   Me adapto a cualquier entorno, me gusta progresar y seguir creciendo el en mundo del desarrollo . <br />
                   Actualmente estoy en busca de poder demostrar mis habilidades como desarrollador a quien confie en mi.
@@ -40,7 +41,7 @@ export default function About({language,darkmode}){
                         <IconComponent name={'css' } height='50' width='50'/>
                         <IconComponent name={'react'} height='50' width='50'/>
                         <IconComponent name={'redux'} height='50' width='50'/>
-                        <IconComponent name={'postgres'} height='50' width='50'/>
+                        <IconComponent name={'postgreSQL'} height='50' width='50'/>
                         <IconComponent name={'node'} height='50' width='55' styles={{backgroundColor:'white'}} />
                         <IconComponent name={'express'}  height='30' width='110'
                          styles={styledarkmode} />
@@ -77,7 +78,8 @@ export default function About({language,darkmode}){
                 <h1 className={style.Title}>About me.</h1>
                 <div className={style.InfoContainer}>      
                  <p className={style.info}>
-                 Hi! I'm joaquin.Actually I'm 23 years old. I'm fullstack web developer graduated from Soy Henry bootcamp(image)
+                 Hi! I'm joaquin.Actually I'm 23 years old. I'm fullstack web developer graduated from Soy Henry bootcamp  
+                 <span> <a href="https://www.soyhenry.com/" target='_blank'><img src={Henrry} className={style.henrylogo}/></a> </span> 
                  where i acquired knowledge and created web aplications individually and groupally. <br />
                  I adapt to any environment, I like to progress and continue learning in the develompent world. <br />
                  Actually i'm looking to demonstrate my develompent skills whoever trusts me.
@@ -99,7 +101,7 @@ export default function About({language,darkmode}){
                        <IconComponent name={'css' } height='50' width='50'/>
                        <IconComponent name={'react'} height='50' width='50'/>
                        <IconComponent name={'redux'} height='50' width='50'/>
-                       <IconComponent name={'postgres'} height='50' width='50'/>
+                       <IconComponent name={'postgreSQL'} height='50' width='50'/>
                        <IconComponent name={'node'} height='50' width='55' styles={{backgroundColor:'white'}} />
                        <IconComponent name={'express'}  height='30' width='110'
                         styles={styledarkmode} />
