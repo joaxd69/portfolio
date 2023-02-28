@@ -41,28 +41,29 @@ export default function Nav ({languaje,darkmode}){
                     </Link>
                     
                 </button>
+                <hr />
                 <button className={style.Buttons}>
                     <Link to = '/Projects'>
                     Proyectos
                     </Link>
-                    
-                </button>
+                </button> <hr />
                 <button className={style.Buttons}>
                     <Link to='/Services'>                    
                     Servicios
                     </Link>
                 </button>
-                
+                <hr />
                 <button className={style.Buttons}>
                     <Link to='/About'>
                      Sobre mi
                     </Link>
-                </button>
+                </button> <hr />
                 <button className={style.Buttons} style={backgroundColor} >
                     <Link to='/Contact' style={fontcolor}>
                       Contacto
                     </Link>
                 </button>
+                <hr />
               </div>
                
             </nav>:
@@ -82,32 +83,41 @@ export default function Nav ({languaje,darkmode}){
            </div>
            
           <div className={style.ButtonsContainer}>
+          <input type="checkbox" className={style.check} name=""
+                id="check" style={{display:'none'}} />
+               <label htmlFor="check" >
+                <FontAwesomeIcon icon={faBars} className={style.Menu} />
+                </label>
           <button className={style.Buttons}>
                 <Link to= '/'>
                 Home
                 </Link>
             </button>
+            <hr />
             <button className={style.Buttons}>
                 <Link to ='/Projects'>
                 Project
                 </Link>
             </button>
+            <hr />
             <button className={style.Buttons}>
                 <Link to='/Services'>
                 Services
                 </Link>
             </button>
-            
+            <hr />
             <button className={style.Buttons}>
                 <Link to='/About'>
                 About me
                 </Link>
             </button>
+            <hr />
             <button className={style.Buttons} id={style.contact} style={backgroundColor}>
                 <Link to = '/Contact' style={fontcolor}>
                 Contact
                 </Link>
             </button>
+            <hr />
           </div>
            
         </nav>

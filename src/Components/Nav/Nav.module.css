@@ -35,6 +35,9 @@
     display: flex;
     justify-content:space-evenly;
 }
+.ButtonsContainer hr {
+    display: none;
+}
 .Buttons{
     
     padding: 5px;
@@ -43,7 +46,7 @@
     background-color: rgb(19, 18, 18);
 }
 .Buttons a{
-      color: rgb(153, 153, 153);
+      color: rgb(199, 196, 196);
       text-decoration: none;
       font-size: 20px;
 }
@@ -94,15 +97,17 @@
     width: 40%;
     display: grid;
     display:flow-root;
-    
-    
+
    }
    .Buttons{
     display: block;
     height: fit-content;
     margin:0 auto;
-    margin-top: 50px;
-  
+    margin-top: 35px;
+   }
+   .ButtonsContainer hr{
+   margin: 0;
+   
    }
    
 }
