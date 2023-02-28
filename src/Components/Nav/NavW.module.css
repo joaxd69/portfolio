@@ -103,6 +103,10 @@
        margin: 0;
        border-bottom: 0.8px solid rgb(26, 93, 95);
        }
+       .Buttons :hover{
+        color: rgb(218, 222, 223);
+        text-decoration:underline rgb(225, 0, 255);
+    }
 
       
  }
