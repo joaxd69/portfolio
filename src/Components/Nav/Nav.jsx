@@ -38,7 +38,7 @@ export default function Nav ({languaje,darkmode}){
               <input type="checkbox" className={style.check} name=""
                 id="check" style={{display:'none'}} />
                <label htmlFor="check" >
-                <FontAwesomeIcon icon={faBars} className={style.Menu} />
+                <FontAwesomeIcon icon={faBars} className={style.Menu2} />
                 </label>
                   
                  <button className={style.Buttons}>
@@ -92,7 +92,7 @@ export default function Nav ({languaje,darkmode}){
           <input type="checkbox" className={style.check} name=""
                 id="check" style={{display:'none'}} />
                <label htmlFor="check" >
-                <FontAwesomeIcon icon={faBars} className={style.Menu} />
+                <FontAwesomeIcon icon={faBars} className={style.Menu2} />
                 </label>
           <button className={style.Buttons}>
                 <Link onClick={resetnav} to= '/' >

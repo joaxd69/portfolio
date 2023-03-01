@@ -8,6 +8,12 @@
     border-bottom:1px solid rgb(77, 86, 87);;
 
 }
+.Menu2{
+    display: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+}
 .Menu{
     display: none;
     color: white;
@@ -85,6 +91,13 @@
    }
 }
 @media(max-width:500px){
+    .Menu2{
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+        left: 0;
+        top: 0; 
+    }
    .Buttons a{
     font-size: 18px;
     color: rgb(255, 255, 255);
