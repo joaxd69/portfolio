@@ -9,6 +9,12 @@ export default function Nav ({languaje,darkmode}){
    const backgroundColor=darkmode?{backgroundColor:'black'}:
                                   {backgroundColor:'lightblue'}
    const fontcolor = darkmode?{color:'white'}:{color:'black'}
+   const resetnav=()=>{
+    const navOn=document.getElementById('check')
+    navOn.checked=false
+   }
+    
+
     return (
         <div className={style.initialdiv}>
             {languaje==='spanish'?
@@ -36,30 +42,30 @@ export default function Nav ({languaje,darkmode}){
                 </label>
                   
                  <button className={style.Buttons}>
-                    <Link to = '/'>
+                    <Link onClick={resetnav} to = '/'>
                     <span>Home</span>
                     </Link>
                     
                 </button>
                 <hr />
                 <button className={style.Buttons}>
-                    <Link to = '/Projects'>
+                    <Link onClick={resetnav} to = '/Projects'>
                     Proyectos
                     </Link>
                 </button> <hr />
                 <button className={style.Buttons}>
-                    <Link to='/Services'>                    
+                    <Link onClick={resetnav} to='/Services'>                    
                     Servicios
                     </Link>
                 </button>
                 <hr />
                 <button className={style.Buttons}>
-                    <Link to='/About'>
+                    <Link onClick={resetnav} to='/About'>
                      Sobre mi
                     </Link>
                 </button> <hr />
                 <button className={style.Buttons} style={backgroundColor} >
-                    <Link to='/Contact' style={fontcolor}>
+                    <Link onClick={resetnav} to='/Contact' style={fontcolor}>
                       Contacto
                     </Link>
                 </button>
@@ -89,31 +95,31 @@ export default function Nav ({languaje,darkmode}){
                 <FontAwesomeIcon icon={faBars} className={style.Menu} />
                 </label>
           <button className={style.Buttons}>
-                <Link to= '/'>
+                <Link onClick={resetnav} to= '/' >
                 Home
                 </Link>
             </button>
             <hr />
             <button className={style.Buttons}>
-                <Link to ='/Projects'>
+                <Link onClick={resetnav} to ='/Projects'>
                 Project
                 </Link>
             </button>
             <hr />
             <button className={style.Buttons}>
-                <Link to='/Services'>
+                <Link onClick={resetnav} to='/Services'>
                 Services
                 </Link>
             </button>
             <hr />
             <button className={style.Buttons}>
-                <Link to='/About'>
+                <Link onClick={resetnav} to='/About'>
                 About me
                 </Link>
             </button>
             <hr />
             <button className={style.Buttons} id={style.contact} style={backgroundColor}>
-                <Link to = '/Contact' style={fontcolor}>
+                <Link onClick={resetnav} to = '/Contact' style={fontcolor}>
                 Contact
                 </Link>
             </button>
