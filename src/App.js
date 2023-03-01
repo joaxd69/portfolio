@@ -14,7 +14,7 @@ import Services from './Components/Services/Services';
 function App() {
 
   const [language,setLanguage]= useState('spanish')
-  const [darkMode,setDarkMode]= useState(true)
+  const [darkMode,setDarkMode]= useState(false)
   const handleChange=(e)=>setLanguage(e.target.value)
   const handleDarkChange=(e)=>{
     e.target.value==='dark'?setDarkMode(true):setDarkMode(false); 
