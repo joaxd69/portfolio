@@ -26,6 +26,7 @@ export default function ProjectsEn ({darkmode}){
              aplication.This web app is created with  Javascript, React, Redux,Css,Node.js,PostgreSQL,Express.
                <br />
              <Link to = 'videogames'>More details</Link>
+        
             </span>
           </section>
           

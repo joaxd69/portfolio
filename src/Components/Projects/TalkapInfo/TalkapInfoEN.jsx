@@ -65,7 +65,7 @@ export default function TalkapInfoEN({darkmode}){
             </Link>
            <h1 className={style.Title}>Proyecto grupal : Talkap</h1> 
            <button className={style.buttondeploy}>
-                    <a href="https://client-deploy-wild-design.vercel.app/" rel="noopener noreferrer" target='_blank'>Ir a la aplicacion web</a> <span>(back end in repair)</span>    
+                    <a href="https://talkap.vercel.app" rel="noopener noreferrer" target='_blank'>Ir a la aplicacion web</a>
          </button>
             <div className={style.SecondContainer}>
 
