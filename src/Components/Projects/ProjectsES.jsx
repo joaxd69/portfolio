@@ -62,6 +62,30 @@ export default function ProjectsEs({darkmode}){
            </div>
         </div>
 
+        <div className={style.Projects}>
+           <div className={style.LeftContainer}>
+             <div className={style.ProjectTitle} id='WheatherApp'>
+                <h1>Wheather App</h1>
+             </div>
+            
+           <section className={style.ProjectInfo} >
+             <span>
+              Esta aplicacion web muestra informacion acerca del clima en tiempo real del lugar,
+              donde se encuentre el usuario, como tambien un mapa con la ubicacion del usuario, el cual
+              puede buscar distintos lugares para ver su clima. 
+              Esta construida con React, TypeScript y Css.
+               <br />
+               <Link to='Wheatherapp'>MAS DETALLES</Link>
+            </span>
+           </section>
+          </div>
+        
+           <div className={style.ProjectImage}>
+             <img src={talkapimg} className={style.BigImage} alt='computeimage' />
+             <img src={talkapresp}  className={style.ResponsiveImage} alt='responsiveimage' />
+           </div>
+        </div>
+
          <div className={style.LastContainer}>
              <h1>OTROS PROYECTOS EN PROCESO....</h1>
              <span>Actualmente me encuentro realizando otros proyectos para sumar a este portfolio.</span>

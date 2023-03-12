@@ -11,6 +11,7 @@ import Projects from './Components/Projects/Projects';
 import VideogameInfo from './Components/Projects/VideogameInfo/VideogameInfo';
 import TalkapInfo from './Components/Projects/TalkapInfo/TalkapInfo';
 import Services from './Components/Services/Services';
+import WheatherAppInfo from './Components/Projects/WheatherAppInfo/WheatherAppInfo';
 function App() {
 
   const [language,setLanguage]= useState('spanish')
@@ -41,6 +42,7 @@ function App() {
         <Route  path='/Projects' element={<Projects language={language} darkmode={darkMode}/>}/>
         <Route  path='/Projects/Videogames' element={<VideogameInfo language={language} darkmode={darkMode}/>}/>
         <Route  path='/Projects/Talkap' element={<TalkapInfo language={language} darkmode={darkMode}/>}/>
+        <Route  path='/Projects/WheatherApp' element={<WheatherAppInfo language={language} darkmode={darkMode} /> }/>
         <Route  path='/Services' element={<Services language={language} darkmode={darkMode}/>}/>
       </Routes>
     </div>
