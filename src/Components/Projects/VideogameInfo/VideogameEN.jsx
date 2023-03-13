@@ -59,7 +59,7 @@ export default function VideogameES({darkmode}){
             </Link>
            <h1 className={style.Title}>Individual project : Video game theme</h1> 
           <button className={style.buttondeploy}>
-                    <a href="https://videogames-deploy-nine.vercel.app/" rel="noopener noreferrer" target='_blank'>Go to Appweb</a>     
+                    <a href="https://videogames-deploy-nine.vercel.app/" rel="noopener noreferrer" target='_blank'>Go to web app</a>     
          </button>
             <div className={style.SecondContainer}>
 

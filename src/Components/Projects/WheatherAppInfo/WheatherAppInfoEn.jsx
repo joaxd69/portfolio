@@ -28,7 +28,7 @@ export default function WheaterAppInfoEn ({darkmode}){
            <h1 className={style.Title}>Wheather App</h1> 
            
            <button className={style.buttondeploy}>
-                    <a href="https://wheater-app-gules.vercel.app/" rel="noopener noreferrer" target='_blank'>Ir a la aplicacion web</a>     
+                    <a href="https://wheater-app-gules.vercel.app/" rel="noopener noreferrer" target='_blank'>Go to web app.</a>     
          </button>
             <div className={style.SecondContainer}>
 

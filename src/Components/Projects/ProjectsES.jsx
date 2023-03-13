@@ -4,6 +4,8 @@ import videogameimg from '../../assets/Videogame.jpg'
 import videogameresp from '../../assets/Videogameresp.jpeg'
 import talkapimg from '../../assets/talkap.png'
 import talkapresp from '../../assets/talkapresponsive.jpeg'
+import wheatherresp from '../../assets/wheatherapp7resp.png'
+import wheaterapp from '../../assets/wheatherapp3.png'
 import {Link} from 'react-router-dom'
 
 export default function ProjectsEs({darkmode}){
@@ -81,8 +83,8 @@ export default function ProjectsEs({darkmode}){
           </div>
         
            <div className={style.ProjectImage}>
-             <img src={talkapimg} className={style.BigImage} alt='computeimage' />
-             <img src={talkapresp}  className={style.ResponsiveImage} alt='responsiveimage' />
+             <img src={wheaterapp} className={style.BigImage} alt='computeimage' />
+             <img src={wheatherresp}  className={style.ResponsiveImage} alt='responsiveimage' />
            </div>
         </div>
 
