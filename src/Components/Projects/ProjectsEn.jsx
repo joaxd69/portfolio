@@ -87,7 +87,7 @@ export default function ProjectsEn ({darkmode}){
              <img src={wheatherresp}  className={style.ResponsiveImage} alt='responsiveimage' />
            </div>
         </div>
-
+   <hr />
         <div className={style.LastContainer}>
              <h1>OTHER PROJECTS IN PROCESS....</h1>
              <span>Actually i'm working in other projects to add in this portfolio.</span>

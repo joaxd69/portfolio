@@ -12,6 +12,7 @@ export default function Projects({language,darkmode}){
                 <span>{language==='spanish'?'Ir a :':'Go to :'} </span>
                 <a href="#Videogame">Videogames</a>
                 <a href="#Talkap">Talkap</a>
+                <a href="#WheatherApp">Wheather app</a>
              </ul> 
             </div>
             {language==='spanish'?  
